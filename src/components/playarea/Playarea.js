@@ -25,12 +25,17 @@ const PlayArea = () => {
   };
 
   const handleScore = () => {
-    const newScore = score;
-    setScore(newScore++);
+    let newScore = score + 1;
+    setScore(newScore);
   };
 
   const handleSubmit = (answer) => {
-    console.log(answer);
+    console.log(answer, cardQuestion.correct);
+    console.log(score);
+    if (answer === cardQuestion.correct) {
+      handleScore();
+    }
+    getQuestion();
   };
 
   useEffect(() => {
@@ -48,7 +53,10 @@ const PlayArea = () => {
     />
   );
   return (
-    <div className="play-area-container">{cardQuestion && randomHtml}</div>
+    <div className="play-area-container">
+      <div className="score">{score}</div>
+      {cardQuestion && randomHtml}
+    </div>
   );
 };
 
