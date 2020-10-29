@@ -3,9 +3,15 @@
 
 h1 {
   font-family: $modak;
+  color: $background;
+  margin: 0 !important;
+  padding: 0;
 }
 
 .header-container {
   background-color: $purple;
   height: 50px;
+  position: absolute;
+  top: 0;
+  width: 100vw;
 }
