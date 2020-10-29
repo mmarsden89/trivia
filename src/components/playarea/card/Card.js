@@ -3,15 +3,23 @@ import "./Card.scss";
 
 const Card = (props) => {
   const [checkedOption, setCheckedOption] = useState("");
+  const [submit, setSubmit] = useState(false);
   const handleClick = (event) => {
     console.log(event.target.value);
     setCheckedOption(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmit(true);
+    props.handleScore();
   };
 
   return (
     <div
       className={props.idx === 0 ? "card-container first" : "card-container"}
       idx={props.idx}
+      style={{ display: submit ? "none" : "block" }}
     >
       <div className="question">{props.qst}</div>
       <div className="answers">
@@ -29,6 +37,7 @@ const Card = (props) => {
               </label>
             </div>
           ))}
+          <button onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </div>
