@@ -1,0 +1,11 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+
+h1 {
+  font-family: $modak;
+}
+
+.header-container {
+  background-color: $purple;
+  height: 50px;
+}
