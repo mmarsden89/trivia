@@ -8,7 +8,9 @@ const Card = (props) => {
   };
 
   return (
-    <div className="card-container" onClick={handleClick} idx={props.idx}></div>
+    <div className="card-container" onClick={handleClick} idx={props.idx}>
+      <div className="question">{props.qst}</div>
+    </div>
   );
 };
 

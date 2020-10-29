@@ -9,13 +9,21 @@ const PlayArea = () => {
   const [randomized, setRandomized] = useState([]);
   // const [flip, setFlip] = useState(false);
 
-  const runRandomizer = () => {
-    const random = questions.sort(() => Math.random() - 0.5);
+  const runRandomizer = (arr) => {
+    const random = arr.sort(() => Math.random() - 0.5);
     setRandomized(random);
   };
 
+  const randomizeQuestions = (inc, cor) => {
+    console.log("here-->", inc, cor);
+    if (inc) {
+      const arr = [...inc, cor];
+      return arr.sort(() => Math.random() - 0.5);
+    }
+  };
+
   useEffect(() => {
-    runRandomizer();
+    runRandomizer(questions);
   });
 
   const randomHtml = randomized.map((qst, index, arr) => (
@@ -25,6 +33,7 @@ const PlayArea = () => {
       idx={index}
       cor={qst.correct}
       inc={qst.incorrect}
+      rdm={randomizeQuestions(qst.incorrect, qst.correct)}
     />
   ));
   return <div className="play-area-container">{randomized && randomHtml}</div>;

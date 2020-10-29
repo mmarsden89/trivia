@@ -1,14 +1,27 @@
 @import "../../../assets/styles/colors";
+@import "../../../assets/styles/fonts";
 
 .card-container {
   height: 325px;
   width: 550px;
   background-color: $purple;
-  margin: 20% auto;
   border-radius: 25px;
   transition: 0.25s;
+  position: absolute;
+  top: 30%;
+  right: 20%;
 }
 
 .card-container:hover {
   background-color: $lightpurple;
+}
+
+.question {
+  font-size: 25px;
+  color: $background;
+  font-family: $modak;
+  padding: 25px 15px 10px 15px;
+  background-color: $blue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
