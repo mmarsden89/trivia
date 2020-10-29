@@ -18,18 +18,16 @@ const PlayArea = () => {
     runRandomizer();
   });
 
-  const handleClick = (event) => {
-    console.log(event.target);
-  };
-
-  return (
-    <div className="play-area-container">
-      {randomized &&
-        randomized.map((qst, idx) => (
-          <Card onClick={handleClick} qst={qst} key={idx} />
-        ))}
-    </div>
-  );
+  const randomHtml = randomized.map((qst, index, arr) => (
+    <Card
+      qst={qst.question}
+      key={index}
+      idx={index}
+      cor={qst.correct}
+      inc={qst.incorrect}
+    />
+  ));
+  return <div className="play-area-container">{randomized && randomHtml}</div>;
 };
 
 export default PlayArea;
