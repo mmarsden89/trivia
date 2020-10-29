@@ -8,8 +8,17 @@ const Card = (props) => {
   };
 
   return (
-    <div className="card-container" onClick={handleClick} idx={props.idx}>
+    <div
+      className={props.idx === 0 ? "card-container first" : "card-container"}
+      onClick={handleClick}
+      idx={props.idx}
+    >
       <div className="question">{props.qst}</div>
+      <div className="answers">
+        {props.rdm.map((answer) => (
+          <div>{answer}</div>
+        ))}
+      </div>
     </div>
   );
 };

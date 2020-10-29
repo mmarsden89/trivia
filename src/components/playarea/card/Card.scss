@@ -4,16 +4,24 @@
 .card-container {
   height: 325px;
   width: 550px;
-  background-color: $purple;
+  background-color: $background;
   border-radius: 25px;
   transition: 0.25s;
-  position: absolute;
-  top: 30%;
-  right: 20%;
+  margin: auto;
+  margin-top: 25%;
+  display: none;
 }
 
-.card-container:hover {
-  background-color: $lightpurple;
+.answers {
+  border: 10px solid $purple;
+  border-top: none;
+  height: 200px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.first {
+  display: block !important;
 }
 
 .question {
@@ -21,7 +29,7 @@
   color: $background;
   font-family: $modak;
   padding: 25px 15px 10px 15px;
-  background-color: $blue;
+  background-color: $lightpurple;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }

@@ -15,7 +15,6 @@ const PlayArea = () => {
   };
 
   const randomizeQuestions = (inc, cor) => {
-    console.log("here-->", inc, cor);
     if (inc) {
       const arr = [...inc, cor];
       return arr.sort(() => Math.random() - 0.5);
