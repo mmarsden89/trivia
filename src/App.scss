@@ -9,3 +9,9 @@
   text-align: center;
   background-color: $background;
 }
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}

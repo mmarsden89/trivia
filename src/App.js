@@ -9,8 +9,10 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      {/* <PlayArea /> */}
-      <Menu />
+      <div className="body-container">
+        <Menu />
+        <PlayArea />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+@import "../../../assets/styles/colors";
+
+.card-container {
+  height: 325px;
+  width: 550px;
+  background-color: $purple;
+  margin: 20% auto;
+  border-radius: 25px;
+  transition: 0.25s;
+}
+
+.card-container:hover {
+  background-color: $lightpurple;
+}
