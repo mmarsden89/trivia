@@ -2,6 +2,7 @@ import "./App.scss";
 import Header from "./components/header/Header.js";
 import PlayArea from "./components/playarea/PlayArea.js";
 import Menu from "./components/menu/Menu.js";
+import Footer from "./components/footer/Footer.js";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Menu />
         <PlayArea />
       </div>
+      <Footer />
     </div>
   );
 }
