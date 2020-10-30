@@ -24,8 +24,13 @@
 }
 
 .game-over {
-  position: absolute;
-  top: 50px;
+  height: 325px;
+  width: 550px;
+  background-color: $background;
+  border-radius: 25px;
+  transition: 0.25s;
+  margin: auto;
+  border: 10px solid $purple;
 }
 
 .question-number {

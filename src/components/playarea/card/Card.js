@@ -24,7 +24,7 @@ const Card = (props) => {
 
   useEffect(() => {}, []);
 
-  const html = (
+  const questionHtml = (
     <div>
       <div className="question">{props.qst}</div>
       <div className="answers">
@@ -68,7 +68,7 @@ const Card = (props) => {
 
   const answerCard = (
     <div className="answer-card">
-      {guessedResponseHtml}
+      <div className="answer-response">{guessedResponseHtml}</div>
       <button
         type="submit"
         onClick={handleNextQuest}
@@ -82,7 +82,7 @@ const Card = (props) => {
   return (
     <div className="card-container">
       {answered && answerCard}
-      {html}
+      {questionHtml}
     </div>
   );
 };

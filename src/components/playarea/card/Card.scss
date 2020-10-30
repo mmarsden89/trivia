@@ -26,6 +26,12 @@
   width: 530px;
 }
 
+.answer-response {
+  height: 95px !important;
+  margin-top: -100px;
+  width: 520px;
+}
+
 .card-container {
   z-index: 10;
 }
@@ -58,7 +64,8 @@
   cursor: pointer;
 }
 
-.question {
+.question,
+.answer-response {
   font-size: 23px;
   color: $background;
   font-family: $modak;

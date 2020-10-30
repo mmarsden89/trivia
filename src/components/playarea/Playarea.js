@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./PlayArea.scss";
 import questions from "../../questions.json";
+import scoreRange from "../../scoreRange.json";
 
 import Card from "./card/Card.js";
 
@@ -46,6 +47,7 @@ const PlayArea = () => {
       handleScore();
     }
     if (count === 10) {
+      setCount(count + 1);
       flipGame();
     } else if (count < 10) {
       getQuestion();
@@ -70,7 +72,11 @@ const PlayArea = () => {
   );
 
   const gameOverHtml = (
-    <div className="game-over">Game over! You scored {score} points!</div>
+    <div className="game-over">
+      <div>Game over! You scored {score} points!</div>
+      <div>{scoreRange[score]}</div>
+      <div className="button">new game?</div>
+    </div>
   );
 
   const questionNumberHtml = (
@@ -84,17 +90,21 @@ const PlayArea = () => {
     </div>
   );
 
+  const scoreHtml = (
+    <div className="button score">
+      {fireworks && fireWorkHtml}
+      {score} / 10
+    </div>
+  );
+
   return (
     <div className="play-area-container">
       <div className="stat-container">
-        {count < 10 && questionNumberHtml}
-        <div className="button score">
-          {fireworks && fireWorkHtml}
-          {score} / 10
-        </div>
+        {count < 11 && questionNumberHtml}
+        {count < 11 && scoreHtml}
       </div>
-      {cardQuestion && count < 10 && !gameOver && cardHtml}
-      {count === 10 && gameOverHtml}
+      {cardQuestion && count < 11 && !gameOver && cardHtml}
+      {count > 10 && gameOverHtml}
     </div>
   );
 };
