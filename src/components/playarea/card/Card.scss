@@ -40,8 +40,13 @@
   display: block !important;
 }
 
+.form-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .next-question {
-  width: 120px;
+  width: 130px;
   background-color: $pink;
   cursor: pointer;
 }

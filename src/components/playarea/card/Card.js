@@ -27,7 +27,7 @@ const Card = (props) => {
     <div>
       <div className="question">{props.qst}</div>
       <div className="answers">
-        <form>
+        <form className="form-container">
           {props.answers &&
             props.answers.map((answer) => (
               <div className="radio" key={answer}>
@@ -42,14 +42,14 @@ const Card = (props) => {
                 </label>
               </div>
             ))}
-          <div
+          <button
             onClick={handleSubmit}
             type="submit"
             disabled={!checkedOption}
             className="button submit"
           >
             Submit
-          </div>
+          </button>
         </form>
       </div>
     </div>
@@ -63,9 +63,13 @@ const Card = (props) => {
   const answerCard = (
     <div className="answer-card">
       {guessedResponseHtml}
-      <div onClick={handleNextQuest} className="button next-question">
+      <button
+        type="submit"
+        onClick={handleNextQuest}
+        className="button next-question"
+      >
         next question
-      </div>
+      </button>
     </div>
   );
 
