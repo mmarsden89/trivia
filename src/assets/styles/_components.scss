@@ -1,14 +1,18 @@
 .button {
+  color: $background;
   padding: 10px 15px;
   white-space: nowrap;
   border-radius: 10px;
   margin: 0;
   font-weight: 900;
-  color: $background;
-  transition: 1s;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
 }
 
 .button:hover {
-  transition: 1s;
-  backdrop-filter: brightness(85%);
+  backdrop-filter: brightness(85%) !important;
 }
