@@ -67,14 +67,14 @@ const PlayArea = () => {
   );
 
   const questionNumberHtml = (
-    <div className="question-number">Question #{count}</div>
+    <div className="button question-number">Question #{count}</div>
   );
 
   return (
     <div className="play-area-container">
       <div className="stat-container">
         {count < 10 && questionNumberHtml}
-        <div className="score">{score} / 10</div>
+        <div className="button score">{score} / 10</div>
       </div>
       {cardQuestion && count < 10 && !gameOver && cardHtml}
       {count === 10 && gameOverHtml}

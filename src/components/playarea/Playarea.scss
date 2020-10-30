@@ -1,4 +1,5 @@
 @import "../../assets/styles/colors";
+@import "../../assets/styles/components";
 
 .play-area-container {
   flex-grow: 2;
@@ -12,10 +13,6 @@
 .score {
   background-color: $yellow;
   width: 50px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  color: $background;
-  font-weight: 900;
 }
 
 .stat-container {
@@ -34,8 +31,4 @@
 .question-number {
   background-color: $blue;
   width: 100px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  color: $background;
-  font-weight: 900;
 }
