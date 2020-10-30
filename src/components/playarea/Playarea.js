@@ -11,6 +11,7 @@ const PlayArea = () => {
   const [score, setScore] = useState(0);
   const [count, setCount] = useState(1);
   const [gameOver, setGameOver] = useState(false);
+  const [fireworks, setFireworks] = useState(false);
 
   const sortAnswers = async (question) => {
     return [...question.incorrect, question.correct].sort(
@@ -24,6 +25,11 @@ const PlayArea = () => {
     setAnswers(answersSort);
     setCardQuestion(allQuestions[0]);
     allQuestions.shift();
+    setFireworks(false);
+  };
+
+  const handleFireworks = () => {
+    setFireworks(true);
   };
 
   const handleScore = () => {
@@ -59,6 +65,7 @@ const PlayArea = () => {
       answers={answers}
       handleScore={handleScore}
       handleSubmit={handleSubmit}
+      handleFireworks={handleFireworks}
     />
   );
 
@@ -70,11 +77,21 @@ const PlayArea = () => {
     <div className="button question-number">Question #{count}</div>
   );
 
+  const fireWorkHtml = (
+    <div className="pyro">
+      <div className="before"></div>
+      <div className="after"></div>
+    </div>
+  );
+
   return (
     <div className="play-area-container">
       <div className="stat-container">
         {count < 10 && questionNumberHtml}
-        <div className="button score">{score} / 10</div>
+        <div className="button score">
+          {fireworks && fireWorkHtml}
+          {score} / 10
+        </div>
       </div>
       {cardQuestion && count < 10 && !gameOver && cardHtml}
       {count === 10 && gameOverHtml}
