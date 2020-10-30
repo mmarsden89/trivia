@@ -5,14 +5,15 @@ const Card = (props) => {
   const [checkedOption, setCheckedOption] = useState("");
   const [answered, setAnswered] = useState(false);
 
-  const handleClick = (event) => {
-    setCheckedOption(event.target.value);
+  const handleClick = (answer) => {
+    setCheckedOption(answer);
   };
 
   const handleSubmit = (event) => {
-    console.log(event.target);
+    console.log("heres event-->", event.target);
     event.preventDefault();
     setAnswered(true);
+    if (props.cor === checkedOption) props.handleFireworks(true);
   };
 
   const handleNextQuest = () => {
@@ -30,27 +31,32 @@ const Card = (props) => {
         <form className="form-container">
           {props.answers &&
             props.answers.map((answer) => (
-              <div className="radio" key={answer}>
-                <label>
-                  <input
-                    type="radio"
-                    value={answer}
-                    checked={checkedOption === answer}
-                    onChange={handleClick}
-                  />
+              <div
+                className="button radio"
+                key={answer}
+                onClick={() => handleClick(answer)}
+                style={{
+                  backgroundColor: answer === checkedOption ? "#e51670" : "",
+                }}
+              >
+                <div value={answer} className="child-answer">
                   {answer}
-                </label>
+                </div>
               </div>
             ))}
-          <button
-            onClick={handleSubmit}
-            type="submit"
-            disabled={!checkedOption}
-            className="button submit"
-          >
-            Submit
-          </button>
         </form>
+        <button
+          onClick={handleSubmit}
+          type="submit"
+          disabled={!checkedOption}
+          className="button submit"
+          style={{
+            backgroundColor: !checkedOption ? "#add3d9" : "#80d2de",
+            cursor: !checkedOption ? "not-allowed" : "pointer",
+          }}
+        >
+          Submit
+        </button>
       </div>
     </div>
   );
