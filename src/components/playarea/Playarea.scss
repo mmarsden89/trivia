@@ -26,11 +26,22 @@
 .game-over {
   height: 325px;
   width: 550px;
-  background-color: $background;
+  background-color: $purple;
   border-radius: 25px;
   transition: 0.25s;
   margin: auto;
   border: 10px solid $purple;
+  color: $background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.new-game {
+  cursor: pointer;
+  width: 100px;
+  background-color: $pink;
 }
 
 .question-number {

@@ -42,6 +42,14 @@ const PlayArea = () => {
     setGameOver(!gameOver);
   };
 
+  const newGame = () => {
+    setAllQuestions(questions);
+    flipGame();
+    setScore(0);
+    setCount(1);
+    getQuestion();
+  };
+
   const handleSubmit = (answer) => {
     if (answer === cardQuestion.correct) {
       handleScore();
@@ -75,7 +83,9 @@ const PlayArea = () => {
     <div className="game-over">
       <div>Game over! You scored {score} points!</div>
       <div>{scoreRange[score]}</div>
-      <div className="button">new game?</div>
+      <div className="button new-game" onClick={newGame}>
+        new game?
+      </div>
     </div>
   );
 

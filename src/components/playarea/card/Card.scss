@@ -14,7 +14,7 @@
 }
 
 .answer-card {
-  top: 240px;
+  top: 310px;
   position: absolute;
   z-index: 9 !important;
   border: 10px solid $purple;
@@ -22,12 +22,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 313px;
+  height: 243px;
   width: 530px;
 }
 
 .answer-response {
-  height: 95px !important;
+  height: 100px !important;
   margin-top: -100px;
   width: 520px;
 }
@@ -59,6 +59,7 @@
 }
 
 .next-question {
+  margin-top: 150px;
   width: 130px;
   background-color: $pink;
   cursor: pointer;
