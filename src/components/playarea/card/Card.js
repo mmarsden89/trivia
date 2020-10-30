@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 import "./Card.scss";
 
 const Card = (props) => {
-  console.log(props);
   const [checkedOption, setCheckedOption] = useState("");
   const [answered, setAnswered] = useState(false);
 
   const handleClick = (event) => {
-    console.log(event.target.value);
     setCheckedOption(event.target.value);
   };
 
   const handleSubmit = (event) => {
-    setAnswered(true);
+    console.log(event.target);
     event.preventDefault();
-    props.handleSubmit(checkedOption);
+    setAnswered(true);
   };
 
   const handleNextQuest = () => {
+    props.handleSubmit(checkedOption);
+    setCheckedOption("");
     setAnswered(false);
   };
 
@@ -42,18 +42,30 @@ const Card = (props) => {
                 </label>
               </div>
             ))}
-          <button onClick={handleSubmit} type="submit">
+          <div
+            onClick={handleSubmit}
+            type="submit"
+            disabled={!checkedOption}
+            className="button submit"
+          >
             Submit
-          </button>
+          </div>
         </form>
       </div>
     </div>
   );
 
+  const guessedResponseHtml =
+    props.cor === checkedOption
+      ? "Correct! Nice work"
+      : `Incorrect. The correct answer is ${props.cor}`;
+
   const answerCard = (
     <div className="answer-card">
-      {props.cor}
-      <button onClick={handleNextQuest}>next question</button>
+      {guessedResponseHtml}
+      <div onClick={handleNextQuest} className="button next-question">
+        next question
+      </div>
     </div>
   );
 

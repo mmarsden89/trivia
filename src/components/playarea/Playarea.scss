@@ -2,8 +2,40 @@
 
 .play-area-container {
   flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .score {
-  position: relative;
+  background-color: $yellow;
+  width: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: $background;
+  font-weight: 900;
+}
+
+.stat-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.game-over {
+  position: absolute;
+  top: 50px;
+}
+
+.question-number {
+  background-color: $blue;
+  width: 100px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: $background;
+  font-weight: 900;
 }

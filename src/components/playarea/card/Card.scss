@@ -1,5 +1,6 @@
 @import "../../../assets/styles/colors";
 @import "../../../assets/styles/fonts";
+@import "../../../assets/styles/components";
 
 .card-container,
 .answer-card {
@@ -9,13 +10,18 @@
   border-radius: 25px;
   transition: 0.25s;
   margin: auto;
-  margin-top: 25%;
+  margin-top: 30px;
 }
 
 .answer-card {
+  top: 235px;
   position: absolute;
-  top: -45px;
   z-index: 9 !important;
+  border: 10px solid $purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card-container {
@@ -34,6 +40,12 @@
   display: block !important;
 }
 
+.next-question {
+  width: 120px;
+  background-color: $pink;
+  cursor: pointer;
+}
+
 .question {
   font-size: 25px;
   color: $background;
@@ -42,4 +54,9 @@
   background-color: $lightpurple;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+.submit {
+  background-color: $blue;
+  width: 100px;
 }

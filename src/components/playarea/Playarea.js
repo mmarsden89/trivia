@@ -9,7 +9,8 @@ const PlayArea = () => {
   const [allQuestions, setAllQuestions] = useState(questions);
   const [answers, setAnswers] = useState([]);
   const [score, setScore] = useState(0);
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(1);
+  const [gameOver, setGameOver] = useState(false);
 
   const sortAnswers = async (question) => {
     return [...question.incorrect, question.correct].sort(
@@ -30,23 +31,27 @@ const PlayArea = () => {
     setScore(newScore);
   };
 
+  const flipGame = () => {
+    setGameOver(!gameOver);
+  };
+
   const handleSubmit = (answer) => {
-    console.log(count);
     if (answer === cardQuestion.correct) {
       handleScore();
     }
-    if (count !== 0) {
-      console.log("bigger than 1");
+    if (count === 10) {
+      flipGame();
+    } else if (count < 10) {
       getQuestion();
-      setCount(count - 1);
+      setCount(count + 1);
     }
   };
 
   useEffect(() => {
     getQuestion();
-  }, []);
+  }, [gameOver]);
 
-  const randomHtml = (
+  const cardHtml = (
     <Card
       qst={cardQuestion && cardQuestion.question}
       cor={cardQuestion && cardQuestion.correct}
@@ -56,10 +61,23 @@ const PlayArea = () => {
       handleSubmit={handleSubmit}
     />
   );
+
+  const gameOverHtml = (
+    <div className="game-over">Game over! You scored {score} points!</div>
+  );
+
+  const questionNumberHtml = (
+    <div className="question-number">Question #{count}</div>
+  );
+
   return (
     <div className="play-area-container">
-      <div className="score">{score}</div>
-      {cardQuestion && count !== 0 && randomHtml}
+      <div className="stat-container">
+        {count < 10 && questionNumberHtml}
+        <div className="score">{score} / 10</div>
+      </div>
+      {cardQuestion && count < 10 && !gameOver && cardHtml}
+      {count === 10 && gameOverHtml}
     </div>
   );
 };
