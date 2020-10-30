@@ -1,0 +1,14 @@
+.button {
+  padding: 10px 15px;
+  white-space: nowrap;
+  border-radius: 10px;
+  margin: 0;
+  font-weight: 900;
+  color: $background;
+  transition: 1s;
+}
+
+.button:hover {
+  transition: 1s;
+  backdrop-filter: brightness(85%);
+}
