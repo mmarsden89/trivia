@@ -33,16 +33,22 @@
   width: 100px;
 }
 
+.pyro,
+.before,
+.after {
+  height: 0;
+  top: 10px;
+  left: 20px;
+}
+
 .pyro > .before,
 .pyro > .after {
   opacity: 0;
-  left: 20px;
-  top: 20px;
   position: relative;
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  box-shadow: -12px -2px blue, 2px -10px #00ff84, 19px 10px #002bff,
+  box-shadow: -10px -2px blue, 5px -10px #00ff84, 20px 10px #002bff,
     -10px -3px #ff009d, -10px -27px #ffb300, -5px -31px #ff006e,
     22px -3px #ff4000, 18px -35px #ff00d0, -1px -38px #00f6ff,
     20px -38px #99ff00, -6px -2px #ff0400, -11px -33px #6200ff,
@@ -79,8 +85,5 @@
       0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,
       0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,
       0 0 white, 0 0 white, 0 0 white;
-  }
-  to {
-    opacity: 0;
   }
 }
