@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Card.scss";
 
 const Card = (props) => {
+  console.log(props);
   const [checkedOption, setCheckedOption] = useState("");
-  const [rdm, setRdm] = useState([]);
+  const [answered, setAnswered] = useState(false);
 
   const handleClick = (event) => {
     console.log(event.target.value);
@@ -11,14 +12,16 @@ const Card = (props) => {
   };
 
   const handleSubmit = (event) => {
+    setAnswered(true);
     event.preventDefault();
     props.handleSubmit(checkedOption);
   };
 
-  useEffect(() => {
-    const whatever = props.inc ? props.inc.push(props.cor) : null;
-    setRdm(whatever);
-  }, []);
+  const handleNextQuest = () => {
+    setAnswered(false);
+  };
+
+  useEffect(() => {}, []);
 
   const html = (
     <div>
@@ -47,7 +50,19 @@ const Card = (props) => {
     </div>
   );
 
-  return <div className="card-container">{html}</div>;
+  const answerCard = (
+    <div className="answer-card">
+      {props.cor}
+      <button onClick={handleNextQuest}>next question</button>
+    </div>
+  );
+
+  return (
+    <div className="card-container">
+      {answered && answerCard}
+      {html}
+    </div>
+  );
 };
 
 export default Card;

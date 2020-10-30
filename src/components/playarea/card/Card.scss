@@ -1,7 +1,8 @@
 @import "../../../assets/styles/colors";
 @import "../../../assets/styles/fonts";
 
-.card-container {
+.card-container,
+.answer-card {
   height: 325px;
   width: 550px;
   background-color: $background;
@@ -9,6 +10,16 @@
   transition: 0.25s;
   margin: auto;
   margin-top: 25%;
+}
+
+.answer-card {
+  position: absolute;
+  top: -45px;
+  z-index: 9 !important;
+}
+
+.card-container {
+  z-index: 10;
 }
 
 .answers {

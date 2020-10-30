@@ -9,6 +9,7 @@ const PlayArea = () => {
   const [allQuestions, setAllQuestions] = useState(questions);
   const [answers, setAnswers] = useState([]);
   const [score, setScore] = useState(0);
+  const [count, setCount] = useState(10);
 
   const sortAnswers = async (question) => {
     return [...question.incorrect, question.correct].sort(
@@ -17,7 +18,7 @@ const PlayArea = () => {
   };
 
   const getQuestion = async () => {
-    allQuestions.sort(() => Math.random() - 0.5);
+    await allQuestions.sort(() => Math.random() - 0.5);
     const answersSort = await sortAnswers(allQuestions[0]);
     setAnswers(answersSort);
     setCardQuestion(allQuestions[0]);
@@ -30,12 +31,15 @@ const PlayArea = () => {
   };
 
   const handleSubmit = (answer) => {
-    console.log(answer, cardQuestion.correct);
-    console.log(score);
+    console.log(count);
     if (answer === cardQuestion.correct) {
       handleScore();
     }
-    getQuestion();
+    if (count !== 0) {
+      console.log("bigger than 1");
+      getQuestion();
+      setCount(count - 1);
+    }
   };
 
   useEffect(() => {
@@ -55,7 +59,7 @@ const PlayArea = () => {
   return (
     <div className="play-area-container">
       <div className="score">{score}</div>
-      {cardQuestion && randomHtml}
+      {cardQuestion && count !== 0 && randomHtml}
     </div>
   );
 };
