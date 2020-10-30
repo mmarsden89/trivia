@@ -4,9 +4,7 @@
 h1 {
   font-family: $modak;
   color: $background;
-  margin: 0 !important;
-  padding: 0;
-  text-align: left;
+  margin-right: 15px;
 }
 
 .header-container {
@@ -15,4 +13,7 @@ h1 {
   position: absolute;
   top: 0;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
