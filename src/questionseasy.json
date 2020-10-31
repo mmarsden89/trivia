@@ -1,0 +1,110 @@
+[
+  {
+    "question": "&quot;Some people call me the space cowboy&quot; is the first line from what song?",
+    "correct": "The Joker",
+    "incorrect": ["Fandango", "Take The Money and Run", "Fly Like an Eagle"]
+  },
+  {
+    "question": "Blinky, Pinky, Inky and Clyde are characters from which classic video game?",
+    "correct": "Pac-Man",
+    "incorrect": ["Gauntlet", "Space Invaders", "Street Fighter"]
+  },
+  {
+    "question": "What was the name of singer Frank Ocean&#039;s second studio album, which was released on August 20, 2016?",
+    "correct": "Blonde",
+    "incorrect": ["Brunette", "Black", "Burgundy"]
+  },
+  {
+    "question": "Which of these characters is the mascot of the video game company SEGA?",
+    "correct": "Sonic the Hedgehog",
+    "incorrect": ["Dynamite Headdy", "Alex Kidd", "Opa-Opa"]
+  },
+  {
+    "question": "What is the oldest Disney film?",
+    "correct": "Snow White and the Seven Dwarfs",
+    "incorrect": ["Pinocchio", "Dumbo", "Fantasia"]
+  },
+  {
+    "question": "In Mean Girls, who has breasts that tell when it&#039;s raining?",
+    "correct": "Karen Smith",
+    "incorrect": ["Gretchen Weiners", "Janice Ian", "Cady Heron"]
+  },
+  {
+    "question": "What is the name of the peninsula containing Spain and Portugal?",
+    "correct": "Iberian Peninsula",
+    "incorrect": [
+      "European Peninsula",
+      "Peloponnesian Peninsula",
+      "Scandinavian Peninsula"
+    ]
+  },
+  {
+    "question": "In the television show Breaking Bad, what is the street name of Walter and Jesse&#039;s notorious product?",
+    "correct": "Blue Sky",
+    "incorrect": ["Baby Blue", "Rock Candy", "Pure Glass"]
+  },
+  {
+    "question": "What is the homeworld of the Elites from Halo?",
+    "correct": "Sanghelios",
+    "incorrect": ["Te", "Doisac", "Eayn"]
+  },
+  {
+    "question": "Who plays the character of Po in the Kung Fu Panda movies?",
+    "correct": "Jack Black",
+    "incorrect": ["Mirana Jonnes", "McConahey Ramses", "Jim Petersson"]
+  },
+  {
+    "question": "&quot;The Potato Sack&quot; was a collection of indie games released on Steam in 2011 as a promotion for which game?",
+    "correct": "Portal 2",
+    "incorrect": ["Left 4 Dead 2", "Half-Life 3", "Dota 2"]
+  },
+  {
+    "question": "Which &quot;Fallout: New Vegas&quot; quest is NOT named after a real-life song?",
+    "correct": "They Went That-a-Way",
+    "incorrect": [
+      "Come Fly With Me",
+      "Ain&#039;t That a Kick in the Head",
+      "Ring-a-Ding Ding"
+    ]
+  },
+  {
+    "question": "What is Everest&#039;s favorite food in the Nickelodeon/Nick Jr. series &quot;PAW Patrol&quot;?",
+    "correct": "Liver",
+    "incorrect": ["Chicken", "Steak", "Caribou"]
+  },
+  {
+    "question": "The LS1 engine is how many cubic inches?",
+    "correct": "346",
+    "incorrect": ["350", "355", "360"]
+  },
+  {
+    "question": "What is the largest country in the world?",
+    "correct": "Russia",
+    "incorrect": ["Canada", "China", "United States"]
+  },
+  {
+    "question": "What is the speed of light in a vacuum?",
+    "correct": "299,792,458 m/s",
+    "incorrect": ["50,461 m/s", "308,215,043 m/s", "751,665,014,151 m/s"]
+  },
+  {
+    "question": "What is the name of NASA&rsquo;s most famous space telescope?",
+    "correct": "Hubble Space Telescope",
+    "incorrect": ["Big Eye", "Death Star", "Millenium Falcon"]
+  },
+  {
+    "question": "Who is the last boss in Night In The Woods&#039; Demontower minigame?",
+    "correct": "The Blood Thief",
+    "incorrect": ["Mega Hairball ", "King Skellie ", "Krampus "]
+  },
+  {
+    "question": "Who rode on horseback to warn the Minutemen that the British were coming during the U.S. Revolutionary War?",
+    "correct": "Paul Revere",
+    "incorrect": ["Thomas Paine", "Henry Longfellow", "Nathan Hale"]
+  },
+  {
+    "question": "What language does Node.js use?",
+    "correct": "JavaScript",
+    "incorrect": ["Java", "Java Source", "Joomla Source Code"]
+  }
+]
