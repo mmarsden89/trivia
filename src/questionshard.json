@@ -1,0 +1,296 @@
+[
+  {
+    "question": "Which was the first of Alfred Hitchcock&#039;s movies to be filmed in colour?",
+    "correct": "Rope",
+    "incorrect": ["Psycho", "Vertigo", "Rebecca"]
+  },
+  {
+    "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+    "correct": "Revolver",
+    "incorrect": ["Help!", "Rubber Soul", "Abbey Road"]
+  },
+  {
+    "question": "What is Ron Weasley&#039;s middle name?",
+    "correct": "Bilius",
+    "incorrect": ["Arthur", "John", "Dominic"]
+  },
+  {
+    "question": "Which film star has his statue in Leicester Square?",
+    "correct": "Charlie Chaplin",
+    "incorrect": ["Paul Newman", "Rowan Atkinson ", "Alfred Hitchcock"]
+  },
+  {
+    "question": "How long are all the cutscenes from Metal Gear Solid 4 (PS3, 2008) combined?",
+    "correct": "8 hours",
+    "incorrect": ["4 hours", "12 hours", "5 hours"]
+  },
+  {
+    "question": "The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?",
+    "correct": "Micronesia",
+    "incorrect": ["Fiji", "Tuvalu", "Marshall Islands"]
+  },
+  {
+    "question": "What did the first vending machines in the early 1880&#039;s dispense?",
+    "correct": "Post cards",
+    "incorrect": ["Alcohol", "Cigarettes", "Sodas "]
+  },
+  {
+    "question": "How many known living species of hyenas are there?",
+    "correct": "4",
+    "incorrect": ["8", "2", "6"]
+  },
+  {
+    "question": "Which of the following is an existing family in &quot;The Sims&quot;?",
+    "correct": "The Goth Family",
+    "incorrect": ["The Family", "The Simoleon Family", "The Proud Family"]
+  },
+  {
+    "question": "What is the scientific name of the cheetah?",
+    "correct": "Acinonyx jubatus",
+    "incorrect": ["Panthera onca", "Lynx rufus", "Felis catus"]
+  },
+  {
+    "question": "In 2012, which movie won every category in the 32nd &quot;Golden Raspberry Awards&quot;?",
+    "correct": "Jack and Jill",
+    "incorrect": [
+      "The Girl with the Dragon Tattoo",
+      "Thor",
+      "The King&#039;s Speech"
+    ]
+  },
+  {
+    "question": "What year was &quot;JoJo&#039;s Bizarre Adventure: Phantom Blood&quot; first released?",
+    "correct": "1987",
+    "incorrect": ["2013", "1983", "1995"]
+  },
+  {
+    "question": "In Les Mis&eacute;rables, who is Prison Code 24601?",
+    "correct": "Jean Valjean",
+    "incorrect": ["Marius Pontmercy", "Javert", "Jean Claude Van Damme"]
+  },
+  {
+    "question": "Which car company is the only Japanese company which won the 24 Hours of Le Mans?",
+    "correct": "Mazda",
+    "incorrect": ["Toyota", "Subaru", "Nissan"]
+  },
+  {
+    "question": "What year was the United States Declaration of Independence signed?",
+    "correct": "1776",
+    "incorrect": ["1775", "1774", "1777"]
+  },
+  {
+    "question": "What was Napoleon Bonaparte&#039;s name before he changed it?",
+    "correct": "Napoleone di Buonaparte",
+    "incorrect": [
+      "Naapolion van Bonijpaart",
+      "Napole&atilde;o do Boaparte",
+      "Napoleona de Buenoparte"
+    ]
+  },
+  {
+    "question": "Which male player won the gold medal of table tennis singles in 2016 Olympics Games?",
+    "correct": "Ma Long (China)",
+    "incorrect": [
+      "Zhang Jike (China)",
+      "Jun Mizutani (Japan)",
+      "Vladimir Samsonov (Belarus)"
+    ]
+  },
+  {
+    "question": "Which character, in the game &quot;Morenatsu&quot;, has the most possible endings to their route, at a total of four different endings?",
+    "correct": "Shin Kuroi",
+    "incorrect": ["Kouya Aotsuki", "Soutarou Touno", "Torahiko Ooshima"]
+  },
+  {
+    "question": "What North American tourist attraction is served by the &quot;Maid of the Mist&quot; tour company?",
+    "correct": "Niagara Falls",
+    "incorrect": [
+      "Whistler, British Columbia",
+      "Disney World",
+      "Yosemite National Park"
+    ]
+  },
+  {
+    "question": "What do the video games No Man&rsquo;s Sky and Mighty No. 9 have in common?",
+    "correct": "Both were announced in 2013.",
+    "incorrect": [
+      "Both were crowdfunded.",
+      "Both were developed by indie studios.",
+      "Both were released for the PlayStation 3."
+    ]
+  },
+  {
+    "question": "Who was the President of the United States during the signing of the Gadsden Purchase?",
+    "correct": "Franklin Pierce",
+    "incorrect": ["Andrew Johnson", "Abraham Lincoln", "James Polk"]
+  },
+  {
+    "question": "The creeper in Minecraft was the result of a bug while implementing which creature?",
+    "correct": "Pig",
+    "incorrect": ["Zombie", "Chicken", "Cow"]
+  },
+  {
+    "question": "How many women joined the United States Armed Services during World War II?",
+    "correct": "350,000",
+    "incorrect": ["225,000", "100,000", "500,000"]
+  },
+  {
+    "question": "How many voice channels does the Nintendo Entertainment System support natively?",
+    "correct": "5",
+    "incorrect": ["4", "6", "3"]
+  },
+  {
+    "question": "America Online (AOL) started out as which of these online service providers?",
+    "correct": "Quantum Link",
+    "incorrect": ["CompuServe", "Prodigy", "GEnie"]
+  },
+  {
+    "question": "The &#039;D&#039; in the term &quot;D-Mail&quot; from the game &quot;Steins; Gate&quot; is short for what?",
+    "correct": "DeLorean",
+    "incorrect": ["Deep", "Demo", "Dev"]
+  },
+  {
+    "question": "What is the name of Niccol&ograve; Machiavelli&#039;s work that argued effective leaders needed to crush their opponents at all costs?",
+    "correct": "The Prince",
+    "incorrect": [
+      "The Rape of Lucrece",
+      "Will to Power",
+      "Love&#039;s Labours Lost"
+    ]
+  },
+  {
+    "question": "How much radiation does a banana emit?",
+    "correct": "0.1 Microsievert",
+    "incorrect": ["0.3 Microsievert", "0.5 Microsievert", "0.7 Microsievert"]
+  },
+  {
+    "question": "Which Audi does not use Haldex based all wheel drive system?",
+    "correct": "Audi A8",
+    "incorrect": ["Audi TT", "Audi S3", "Audi A3"]
+  },
+  {
+    "question": "Which of these is not an additional variation of the color purple?",
+    "correct": "Kobicha",
+    "incorrect": ["Byzantium", "Pomp and Power", "Palatinate"]
+  },
+  {
+    "question": "In &quot;Call Of Duty: Zombies&quot;, &quot;Richtofen&quot; is in possession of two filled blood vials belonging to who?",
+    "correct": "Sal DeLuca and Finn O&#039;Leary",
+    "incorrect": [
+      "Richtofen",
+      "Al Arlington and Sal DeLuca",
+      "Jessica Rose and Jack Vincent"
+    ]
+  },
+  {
+    "question": "In &quot;Gravity Falls&quot;, what does Quentin Trembley do when he is driven out from the White House?",
+    "correct": "Eat a salamander and jump out the window.",
+    "incorrect": [
+      "Leave in peace.",
+      "Jump out the window.",
+      "Release 1,000 captive salamanders into the white house."
+    ]
+  },
+  {
+    "question": "Which of the following actors portrayed the Ninth Doctor in the British television show &quot;Doctor Who&quot;?",
+    "correct": "Christopher Eccleston",
+    "incorrect": ["David Tennant", "Matt Smith", "Tom Baker"]
+  },
+  {
+    "question": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie &quot;Avatar&quot;?",
+    "correct": "Sigourney Weaver",
+    "incorrect": ["Jessica Chastain", "Melissa Beckett", "Alyssa Monroe "]
+  },
+  {
+    "question": "What was the callsign of Commander William Adama in Battlestar Galactica (2004)?",
+    "correct": "Husker",
+    "incorrect": ["Starbuck", "Apollo", "Crashdown"]
+  },
+  {
+    "question": "What vulnerability ranked #1 on the OWASP Top 10 in 2013?",
+    "correct": "Injection ",
+    "incorrect": [
+      "Broken Authentication",
+      "Cross-Site Scripting",
+      "Insecure Direct Object References"
+    ]
+  },
+  {
+    "question": "In Margaret Atwood&#039;s &quot;The Handmaid&#039;s Tale&quot;, what is Offred&#039;s real name is implied to be?",
+    "correct": "June",
+    "incorrect": ["August", "April", "May"]
+  },
+  {
+    "question": "In season one of the US Kitchen Nightmares, Gordan Ramsay tried to save 10 different restaurants. How many ended up closing afterwards?",
+    "correct": "9",
+    "incorrect": ["6", "3", "0"]
+  },
+  {
+    "question": "Bj&ouml;rk&#039;s &quot;Unison&quot; contains a sample of which Oval song?",
+    "correct": "Aero Deck",
+    "incorrect": ["Textuell", "Panorama", "Do While"]
+  },
+  {
+    "question": "Some of the &quot;Fallen Empires&quot; cards from &quot;Magic: The Gathering&quot; were misprinted on the backs of which other card game?",
+    "correct": "Wyvern",
+    "incorrect": ["Pokemon", "Dominion", "Yu-Gi-Oh"]
+  },
+  {
+    "question": "In Magic: The Gathering, which of the following was the first publicly released foil card?",
+    "correct": "Lightning Dragon",
+    "incorrect": ["Revenant", "Beast of Burden", "Dirtcowl Wurm"]
+  },
+  {
+    "question": "Which of the following games was NOT included in Valve&#039;s Orange Box?",
+    "correct": "Counter-Strike",
+    "incorrect": ["Portal", "Half-Life 2: Episode Two", "Team Fortress 2"]
+  },
+  {
+    "question": "In the Kingdom Hearts series, which is not an optional boss you can fight?",
+    "correct": "Master Yen Sid",
+    "incorrect": ["Sephiroth", "Julius", "Kurt Zisa"]
+  },
+  {
+    "question": "Which English king was married to Eleanor of Aquitaine?",
+    "correct": "Henry II",
+    "incorrect": ["Richard I", "Henry I", "Henry V"]
+  },
+  {
+    "question": "Which countries participated in the Lobster War?",
+    "correct": "France and Brazil",
+    "incorrect": [
+      "Canada and Norway",
+      "Australia and New Zealand",
+      "United States and England"
+    ]
+  },
+  {
+    "question": "Which of the following Physicists aided Nazi Germany in their production of a nuclear weapon?",
+    "correct": "Werner Heisenberg",
+    "incorrect": ["John von Neumann", "Albert Einstein", "Max Planck"]
+  },
+  {
+    "question": "Which member of the Wu-Tang Clan had only one verse in their debut album Enter the Wu-Tang (36 Chambers)?",
+    "correct": "Masta Killa",
+    "incorrect": ["Method Man", "Inspectah Deck", "GZA"]
+  },
+  {
+    "question": "Which of these positions did the astronomer and physicist Isaac Newton not hold?",
+    "correct": "Surveyor to the City of London",
+    "incorrect": [
+      "Professor of Mathematics",
+      "Warden of the Royal Mint",
+      "Member of Parliament"
+    ]
+  },
+  {
+    "question": "Who is the horror manga artist who made Uzumaki?",
+    "correct": "Junji Ito",
+    "incorrect": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
+  },
+  {
+    "question": "In &quot;Resident Evil 3&quot;, how many inventory slots does Jill have at the start of the game?",
+    "correct": "10",
+    "incorrect": ["6", "8", "12"]
+  }
+]
