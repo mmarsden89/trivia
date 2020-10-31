@@ -36,7 +36,7 @@ const PlayArea = () => {
   const handleScore = () => {
     console.log(document.cookie);
     let cookieScore = parseFloat(document.cookie.split("=")[1]);
-    document.cookie = `score=${cookieScore++}`;
+    document.cookie = `score=${cookieScore + 1}`;
     let newScore = score + 1;
     setScore(newScore);
   };

@@ -10,7 +10,6 @@ const Card = (props) => {
   };
 
   const handleSubmit = (event) => {
-    console.log("heres event-->", event.target);
     event.preventDefault();
     setAnswered(true);
     if (props.cor === checkedOption) props.handleFireworks(true);

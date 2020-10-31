@@ -7,7 +7,10 @@ const Header = (props) => {
       <div className="button menu" onClick={props.toggleMenu}>
         menu
       </div>
-      <h1>Trivia</h1>
+      <div className="header-right-container">
+        <p className="cookie-num">{props.cookieNum || 0}</p>
+        <h1>Trivia</h1>
+      </div>
     </div>
   );
 };

@@ -8,6 +8,11 @@ h1 {
   margin-right: 15px;
 }
 
+.cookie-num {
+  color: $background;
+  margin-right: 25px;
+}
+
 .header-container {
   background-color: $purple;
   height: 50px;
@@ -17,6 +22,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-right-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .menu {
