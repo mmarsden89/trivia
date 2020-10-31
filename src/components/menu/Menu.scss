@@ -40,3 +40,10 @@
 .project-container > h2 {
   font-family: "Wendy One", sans-serif;
 }
+
+.upgrade-coin-container {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  justify-content: space-evenly;
+}

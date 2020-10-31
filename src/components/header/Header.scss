@@ -10,12 +10,20 @@ h1 {
 
 .cookie-num {
   color: $background;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 .coin {
   width: 15px;
   height: 15px;
+}
+
+.coin-header-container {
+  display: flex;
+  flex-direction: row;
+  //   justify-content: center;
+  align-items: center;
+  margin-right: 15px;
 }
 
 .header-container {

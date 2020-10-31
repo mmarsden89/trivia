@@ -9,8 +9,10 @@ const Header = (props) => {
         menu
       </div>
       <div className="header-right-container">
-        <p className="cookie-num">{props.cookieNum || 0}</p>
-        <img src={coin} className="coin" />
+        <div className="coin-header-container">
+          <p className="cookie-num">{props.cookieNum || 0}</p>
+          <img src={coin} className="coin" />
+        </div>
         <h1>Trivia</h1>
       </div>
     </div>
