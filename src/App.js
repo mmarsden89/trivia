@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/header/Header.js";
 import PlayArea from "./components/playarea/PlayArea.js";
 import Menu from "./components/menu/Menu.js";
@@ -8,9 +8,22 @@ import Cookie from "./components/cookie/Cookie.js";
 
 function App() {
   const [menu, setMenu] = useState(false);
+  const [cookie, setCookie] = useState(false);
+
   const toggleMenu = () => {
     setMenu(!menu);
   };
+
+  const handleCookie = () => {
+    setCookie(true);
+    document.cookie = "score=0";
+  };
+
+  useEffect(() => {
+    setCookie(false);
+    if (document.cookie.length > 0) setCookie(true);
+  }, [cookie]);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +34,7 @@ function App() {
         <PlayArea />
       </div>
       <Footer />
-      <Cookie />
+      {!cookie && <Cookie handleCookie={handleCookie} cookie={cookie} />}
     </div>
   );
 }

@@ -5,7 +5,13 @@
   top: 200px;
   position: absolute;
   background-color: $blue;
-  height: 50px;
+  height: 100px;
   width: 600px;
   z-index: 100 !important;
+  cursor: pointer;
+  display: none;
+}
+
+.cookie-button {
+  width: 100px;
 }

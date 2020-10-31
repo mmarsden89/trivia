@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import "./Cookie.scss";
 
-const Cookie = () => {
-  const [cookie, setCookie] = useState(false);
+const Cookie = (props) => {
   return (
-    <div className="cookie-container">
-      I use a cookie to save your total score progress. Nothing else!
-      <div className="button">Agree</div>
+    <div
+      className="cookie-container"
+      style={{ display: props.cookie ? "none" : "block" }}
+    >
+      This app uses cookies. The use of this cookie is just to save your total
+      score. No identifying or any other information is saved nor stored
+      anywhere else.
+      <div className="button cookie-button" onClick={props.handleCookie}>
+        Agree
+      </div>
     </div>
   );
 };
