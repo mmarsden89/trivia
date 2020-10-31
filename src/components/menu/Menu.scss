@@ -2,6 +2,16 @@
 
 .menu-container {
   height: calc(100vh - 50px);
-  width: 250px;
   background-color: $teal;
+  animation: pop 1s;
+  width: 250px;
+}
+
+@keyframes pop {
+  from {
+    width: 0;
+  }
+  to {
+    width: 250px;
+  }
 }
