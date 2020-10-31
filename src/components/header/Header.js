@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import coin from "../../coin.png";
 
 const Header = (props) => {
   return (
@@ -9,6 +10,7 @@ const Header = (props) => {
       </div>
       <div className="header-right-container">
         <p className="cookie-num">{props.cookieNum || 0}</p>
+        <img src={coin} className="coin" />
         <h1>Trivia</h1>
       </div>
     </div>

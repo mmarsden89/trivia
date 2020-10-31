@@ -1,4 +1,5 @@
 @import "../../assets/styles/colors";
+// @import "../../assets/styles/fonts";
 
 .menu-container {
   height: calc(100vh - 50px);
@@ -14,4 +15,28 @@
   to {
     width: 250px;
   }
+}
+
+.upgrade-container,
+.project-container {
+  margin-top: 100px;
+  color: $background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.upgrade-container {
+  height: 200px;
+}
+
+.project-container {
+  height: 100px;
+}
+
+.upgrade-container > h2,
+.project-container > h2 {
+  font-family: "Wendy One", sans-serif;
 }

@@ -3,7 +3,7 @@
 @import "../../assets/styles/components";
 
 h1 {
-  font-family: $modak;
+  font-family: $wendy;
   color: $background;
   margin-right: 15px;
 }
@@ -11,6 +11,11 @@ h1 {
 .cookie-num {
   color: $background;
   margin-right: 25px;
+}
+
+.coin {
+  width: 15px;
+  height: 15px;
 }
 
 .header-container {
