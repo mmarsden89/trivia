@@ -4,6 +4,7 @@ import Header from "./components/header/Header.js";
 import PlayArea from "./components/playarea/PlayArea.js";
 import Menu from "./components/menu/Menu.js";
 import Footer from "./components/footer/Footer.js";
+import Cookie from "./components/cookie/Cookie.js";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         <PlayArea />
       </div>
       <Footer />
+      <Cookie />
     </div>
   );
 }

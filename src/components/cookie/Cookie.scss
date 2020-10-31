@@ -1,0 +1,11 @@
+@import "../../assets/styles/colors";
+// @import "../../assets/styles/components";
+
+.cookie-container {
+  top: 200px;
+  position: absolute;
+  background-color: $blue;
+  height: 50px;
+  width: 600px;
+  z-index: 100 !important;
+}
