@@ -27,10 +27,8 @@ function App() {
   };
 
   const handleCookieInfo = (type) => {
-    console.log(document.cookie);
     let cookieJSON = JSON.parse(document.cookie);
     let cookieScore = parseFloat(cookieJSON.score);
-    console.log(cookieScore);
     let easyScore = false;
     let mediumScore = false;
     let hardScore = false;
@@ -39,10 +37,16 @@ function App() {
       setCookieNum(cookieScore);
     } else if (type === "easy") {
       easyScore = true;
+      cookieScore = cookieScore - 20;
+      setCookieNum(cookieScore);
     } else if (type === "medium") {
       mediumScore = true;
+      cookieScore = cookieScore - 20;
+      setCookieNum(cookieScore);
     } else if (type === "hard") {
       hardScore = true;
+      cookieScore = cookieScore - 20;
+      setCookieNum(cookieScore);
     }
     document.cookie = JSON.stringify({
       score: `${cookieScore}`,
@@ -59,7 +63,8 @@ function App() {
   };
 
   const handlePurchase = (event) => {
-    console.log(event.currentTarget.id);
+    const type = event.currentTarget.id;
+    handleCookieInfo(type);
   };
 
   useEffect(() => {
