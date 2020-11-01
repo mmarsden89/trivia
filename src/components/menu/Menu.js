@@ -24,6 +24,14 @@ const Menu = (props) => {
         <h2>Upgrades</h2>
         <div
           className="upgrade-coin-container button"
+          style={{ cursor: "pointer" }}
+          onClick={props.handlePurchase}
+          id="default"
+        >
+          Default Questions
+        </div>
+        <div
+          className="upgrade-coin-container button"
           style={{
             cursor: cookieNum >= 20 || easy ? "pointer" : "not-allowed",
           }}

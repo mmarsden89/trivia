@@ -5,7 +5,6 @@ import scoreRange from "../../scoreRange.json";
 import Card from "./card/Card.js";
 
 const PlayArea = (props) => {
-  const [topLevel, setTopLevel] = useState();
   const [cardQuestion, setCardQuestion] = useState({});
   const [allQuestions, setAllQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
@@ -15,7 +14,6 @@ const PlayArea = (props) => {
   const [playing, setPlaying] = useState(false);
 
   const sortAnswers = async (question) => {
-    console.log(props.questions.length, allQuestions.length);
     return [...question.incorrect, question.correct].sort(
       () => Math.random() - 0.5
     );
@@ -62,20 +60,31 @@ const PlayArea = (props) => {
   };
 
   const startPlay = () => {
+    newGame();
+    setGameOver(false);
+    console.log(cardQuestion);
     setPlaying(true);
   };
 
   useEffect(() => {
+    console.log(props.questions);
     setAllQuestions(props.questions.slice());
     if (playing) getQuestion();
+    console.log("getting here??");
+    console.log(props.newGame);
+    if (props.newGame) {
+      // console.log("are we getting new game?");
+      setPlaying(false);
+      newGame();
+    }
     // eslint-disable-next-line
   }, [gameOver, props.questions, playing]);
 
   const cardHtml = (
     <Card
-      qst={cardQuestion && cardQuestion.question}
-      cor={cardQuestion && cardQuestion.correct}
-      inc={cardQuestion && cardQuestion.incorrect}
+      qst={cardQuestion.question}
+      cor={cardQuestion.correct}
+      inc={cardQuestion.incorrect}
       answers={answers}
       handleScore={props.handleScore}
       handleSubmit={handleSubmit}
@@ -114,13 +123,13 @@ const PlayArea = (props) => {
   return (
     <div className="play-area-container">
       <div className="stat-container">
-        {count < 11 && questionNumberHtml}
+        {count < 11 && playing && questionNumberHtml}
         {!playing && (
-          <button onClick={startPlay} className="button">
+          <button onClick={startPlay} className="button start-play">
             play?
           </button>
         )}
-        {count < 11 && scoreHtml}
+        {count < 11 && playing && scoreHtml}
       </div>
       {cardQuestion && count < 11 && !gameOver && playing && cardHtml}
       {count > 10 && gameOverHtml}

@@ -16,6 +16,7 @@ function App() {
   const [cookieNum, setCookieNum] = useState(0);
   const [score, setScore] = useState(0);
   const [questionSet, setQuestionSet] = useState(questions);
+  const [newGame, setNewGame] = useState(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -71,7 +72,7 @@ function App() {
 
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
-    if (JSON.parse(document.cookie)[type] === "true") {
+    if (JSON.parse(document.cookie)[type] === "true" || type === "default") {
       handleQuestionSet(type);
     } else {
       handleCookieInfo(type);
@@ -88,15 +89,16 @@ function App() {
     } else {
       setQuestionSet(questionshard);
     }
+    setNewGame(true);
   };
 
   useEffect(() => {
-    console.log(questionSet.length);
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
       setCookieNum(JSON.parse(document.cookie).score);
     }
+    setNewGame(false);
   }, [cookie, cookieNum, questionSet]);
 
   return (
@@ -111,6 +113,7 @@ function App() {
           setScore={setScore}
           score={score}
           questions={questionSet}
+          newGame={newGame}
         />
       </div>
       <Footer />
