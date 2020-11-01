@@ -79,7 +79,7 @@
     "incorrect": ["Dorians", "Achaeans", "Ionians"]
   },
   {
-    "question": "Which of these is NOT a team available in the game Pok&eacute;mon Go?",
+    "question": "Which of these is NOT a team available in the game Pokemon Go?",
     "correct": "Team Rocket",
     "incorrect": ["Team Instinct", "Team Valor", "Team Mystic"]
   },
@@ -186,11 +186,6 @@
     "question": "Minecraft was released from beta in 2011 during a convention held in which city?",
     "correct": "Las Vegas",
     "incorrect": ["Paris", "Bellevue", "London"]
-  },
-  {
-    "question": "What is the symbol for Displacement?",
-    "correct": "&Delta;r",
-    "incorrect": ["dr", "Dp", "r"]
   },
   {
     "question": "What is Everests favorite food in the Nickelodeon/Nick Jr. series PAW Patrol?",

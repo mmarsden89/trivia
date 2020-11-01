@@ -38,10 +38,10 @@ const PlayArea = (props) => {
 
   const newGame = () => {
     setAllQuestions(props.questions);
-    flipGame();
     props.setScore(0);
     setCount(1);
     getQuestion();
+    flipGame();
   };
 
   const handleSubmit = (answer) => {
