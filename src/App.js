@@ -18,17 +18,43 @@ function App() {
 
   const handleCookie = () => {
     setCookie(true);
-    document.cookie = "score=0";
-    document.cookie = "easy=false";
-    document.cookie = "medium=false";
-    document.cookie = "hard=false";
+    document.cookie = JSON.stringify({
+      score: "0",
+      easy: "false",
+      medium: "false",
+      hard: "false",
+    });
+  };
+
+  const handleCookieInfo = (type) => {
+    console.log(document.cookie);
+    let cookieJSON = JSON.parse(document.cookie);
+    let cookieScore = parseFloat(cookieJSON.score);
+    console.log(cookieScore);
+    let easyScore = false;
+    let mediumScore = false;
+    let hardScore = false;
+    if (type === "score") {
+      cookieScore = cookieScore + 1;
+      setCookieNum(cookieScore);
+    } else if (type === "easy") {
+      easyScore = true;
+    } else if (type === "medium") {
+      mediumScore = true;
+    } else if (type === "hard") {
+      hardScore = true;
+    }
+    document.cookie = JSON.stringify({
+      score: `${cookieScore}`,
+      easy: `${easyScore}`,
+      medium: `${mediumScore}`,
+      hard: `${hardScore}`,
+    });
   };
 
   const handleScore = () => {
-    let cookieScore = parseFloat(document.cookie.split(";")[0].split("=")[1]);
-    document.cookie = `score=${cookieScore + 1}`;
+    handleCookieInfo("score");
     let newScore = score + 1;
-    setCookieNum(cookieScore + 1);
     setScore(newScore);
   };
 
@@ -37,11 +63,11 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(document.cookie.split(";")[0]);
+    console.log(document.cookie);
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
-      setCookieNum(parseFloat(document.cookie.split("=")[1]));
+      setCookieNum(JSON.parse(document.cookie).score);
     }
   }, [cookie, cookieNum]);
 
