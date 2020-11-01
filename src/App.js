@@ -46,11 +46,11 @@ function App() {
         easyScore = true;
         cookieScore = cookieScore - 20;
         setCookieNum(cookieScore);
-      } else if (type === "medium" && !mediumScore) {
+      } else if (type === "medium" && !mediumScore && cookieScore >= 30) {
         mediumScore = true;
-        cookieScore = cookieScore - 20;
+        cookieScore = cookieScore - 30;
         setCookieNum(cookieScore);
-      } else if (type === "hard" && !hardScore) {
+      } else if (type === "hard" && !hardScore && cookieScore >= 40) {
         hardScore = true;
         cookieScore = cookieScore - 20;
         setCookieNum(cookieScore);
@@ -103,21 +103,28 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
-      </header>
-      <div className="body-container">
-        {menu && <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />}
-        <PlayArea
-          handleScore={handleScore}
-          setScore={setScore}
-          score={score}
-          questions={questionSet}
-          newGame={newGame}
-        />
-      </div>
-      <Footer />
       {!cookie && <Cookie handleCookie={handleCookie} cookie={cookie} />}
+      {cookie && (
+        <>
+          {" "}
+          <header className="App-header">
+            <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
+          </header>
+          <div className="body-container">
+            {menu && (
+              <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />
+            )}
+            <PlayArea
+              handleScore={handleScore}
+              setScore={setScore}
+              score={score}
+              questions={questionSet}
+              newGame={newGame}
+            />
+          </div>
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

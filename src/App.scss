@@ -21,3 +21,17 @@
   flex-direction: row;
   width: 100vw;
 }
+
+.cookie-block {
+  pointer-events: none !important;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+div[disabled] {
+  pointer-events: none;
+  opacity: 0.7;
+}

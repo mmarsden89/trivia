@@ -16,7 +16,7 @@ const Menu = (props) => {
     setMedium(cookies.medium === "true");
     setHard(cookies.hard === "true");
     // eslint-disable-next-line
-  }, [cookieNum, easy, medium, hard]);
+  }, [cookieNum, easy, medium, hard, props.cookieNum]);
 
   return (
     <div className="menu-container">
@@ -51,7 +51,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 || medium ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 30 || medium ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="medium"
@@ -61,7 +61,7 @@ const Menu = (props) => {
             <div id="medium-owned">owned </div>
           ) : (
             <div className="coin-cost-container">
-              20
+              30
               <img src={coin} className="coin" alt="coin" />
             </div>
           )}
@@ -69,7 +69,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 || hard ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 40 || hard ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="hard"
@@ -79,7 +79,7 @@ const Menu = (props) => {
             <div id="hard-owned">owned</div>
           ) : (
             <div className="coin-cost-container">
-              20
+              40
               <img src={coin} className="coin" alt="coin" />
             </div>
           )}
