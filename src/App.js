@@ -65,6 +65,8 @@ function App() {
     });
   };
 
+  
+
   const handleScore = () => {
     handleCookieInfo("score");
     let newScore = score + 1;
