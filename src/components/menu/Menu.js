@@ -11,7 +11,6 @@ const Menu = (props) => {
   const cookies = JSON.parse(document.cookie);
 
   useEffect(() => {
-    console.log(props.menuTog);
     setCookieNum(props.cookieNum);
     setEasy(cookies.easy === "true");
     setMedium(cookies.medium === "true");
