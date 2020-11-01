@@ -52,7 +52,7 @@ function App() {
         setCookieNum(cookieScore);
       } else if (type === "hard" && !hardScore && cookieScore >= 40) {
         hardScore = true;
-        cookieScore = cookieScore - 20;
+        cookieScore = cookieScore - 40;
         setCookieNum(cookieScore);
       }
     }

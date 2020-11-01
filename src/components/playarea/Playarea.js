@@ -89,8 +89,10 @@ const PlayArea = (props) => {
 
   const gameOverHtml = (
     <div className="game-over">
-      <div>Game over! You scored {props.score} points!</div>
-      <div>{scoreRange[props.score]}</div>
+      <div className="game-over-text">
+        Game over! You scored {props.score} points!
+      </div>
+      <div className="game-over-message">{scoreRange[props.score]}</div>
       <div className="button new-game" onClick={newGame}>
         new game?
       </div>
