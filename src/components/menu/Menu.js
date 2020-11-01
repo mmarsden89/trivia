@@ -11,7 +11,6 @@ const Menu = (props) => {
   const cookies = JSON.parse(document.cookie);
 
   useEffect(() => {
-    console.log(document.cookie);
     setCookieNum(props.cookieNum);
     setEasy(cookies.easy === "true");
     setMedium(cookies.medium === "true");
@@ -25,14 +24,16 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 20 || easy ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="easy"
         >
           <h4>Easy Questions</h4>
           {easy ? (
-            <div>owned</div>
+            <div id="easy-owned" onClick={props.handleQuestionSet}>
+              owned
+            </div>
           ) : (
             <div className="coin-cost-container">
               20
@@ -43,14 +44,16 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 20 || medium ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="medium"
         >
           <h4>Medium Questions</h4>
           {medium ? (
-            <div>owned </div>
+            <div id="medium-owned" onClick={props.handleQuestionSet}>
+              owned{" "}
+            </div>
           ) : (
             <div className="coin-cost-container">
               20
@@ -61,14 +64,16 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 20 || hard ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="hard"
         >
           <h4>Hard Questions</h4>
           {hard ? (
-            <div>owned </div>
+            <div id="hard-owned" onClick={props.handleQuestionSet}>
+              owned
+            </div>
           ) : (
             <div className="coin-cost-container">
               20

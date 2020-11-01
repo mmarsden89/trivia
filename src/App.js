@@ -11,6 +11,7 @@ function App() {
   const [cookie, setCookie] = useState(false);
   const [cookieNum, setCookieNum] = useState(0);
   const [score, setScore] = useState(0);
+  const [questionSet, setQuestionSet] = useState("default");
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -64,7 +65,15 @@ function App() {
 
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
-    handleCookieInfo(type);
+    if (JSON.parse(document.cookie)[type] === "true") {
+      setQuestionSet(type);
+    } else {
+      handleCookieInfo(type);
+    }
+  };
+
+  const handleQuestionSet = (event) => {
+    console.log(event);
   };
 
   useEffect(() => {
@@ -82,7 +91,13 @@ function App() {
         <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
       </header>
       <div className="body-container">
-        {menu && <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />}
+        {menu && (
+          <Menu
+            cookieNum={cookieNum}
+            handlePurchase={handlePurchase}
+            handleQuestionSet={handleQuestionSet}
+          />
+        )}
         <PlayArea handleScore={handleScore} setScore={setScore} score={score} />
       </div>
       <Footer />
