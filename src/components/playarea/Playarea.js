@@ -5,11 +5,10 @@ import scoreRange from "../../scoreRange.json";
 
 import Card from "./card/Card.js";
 
-const PlayArea = () => {
+const PlayArea = (props) => {
   const [cardQuestion, setCardQuestion] = useState({});
   const [allQuestions, setAllQuestions] = useState(questions);
   const [answers, setAnswers] = useState([]);
-  const [score, setScore] = useState(0);
   const [count, setCount] = useState(1);
   const [gameOver, setGameOver] = useState(false);
   const [fireworks, setFireworks] = useState(false);
@@ -33,14 +32,6 @@ const PlayArea = () => {
     setFireworks(true);
   };
 
-  const handleScore = () => {
-    console.log(document.cookie);
-    let cookieScore = parseFloat(document.cookie.split("=")[1]);
-    document.cookie = `score=${cookieScore + 1}`;
-    let newScore = score + 1;
-    setScore(newScore);
-  };
-
   const flipGame = () => {
     setGameOver(!gameOver);
   };
@@ -48,15 +39,15 @@ const PlayArea = () => {
   const newGame = () => {
     setAllQuestions(questions);
     flipGame();
-    setScore(0);
+    props.setScore(0);
     setCount(1);
     getQuestion();
   };
 
   const handleSubmit = (answer) => {
-    if (answer === cardQuestion.correct) {
-      handleScore();
-    }
+    // if (answer === cardQuestion.correct) {
+    //   props.handleScore();
+    // }
     if (count === 10) {
       setCount(count + 1);
       flipGame();
@@ -76,7 +67,7 @@ const PlayArea = () => {
       cor={cardQuestion && cardQuestion.correct}
       inc={cardQuestion && cardQuestion.incorrect}
       answers={answers}
-      handleScore={handleScore}
+      handleScore={props.handleScore}
       handleSubmit={handleSubmit}
       handleFireworks={handleFireworks}
     />
@@ -84,8 +75,8 @@ const PlayArea = () => {
 
   const gameOverHtml = (
     <div className="game-over">
-      <div>Game over! You scored {score} points!</div>
-      <div>{scoreRange[score]}</div>
+      <div>Game over! You scored {props.score} points!</div>
+      <div>{scoreRange[props.score]}</div>
       <div className="button new-game" onClick={newGame}>
         new game?
       </div>
@@ -106,7 +97,7 @@ const PlayArea = () => {
   const scoreHtml = (
     <div className="button score">
       {fireworks && fireWorkHtml}
-      {score} / 10
+      {props.score} / 10
     </div>
   );
 

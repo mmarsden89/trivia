@@ -7,21 +7,21 @@ const Menu = () => {
     <div className="menu-container">
       <div className="upgrade-container">
         <h2>Upgrades</h2>
-        <div className="upgrade-coin-container">
+        <div className="upgrade-coin-container button">
           <h4>Easy Questions</h4>
           <div className="coin-cost-container">
             20
             <img src={coin} className="coin" />
           </div>
         </div>
-        <div className="upgrade-coin-container">
+        <div className="upgrade-coin-container button">
           <h4>Medium Questions</h4>
           <div className="coin-cost-container">
             20
             <img src={coin} className="coin" />
           </div>
         </div>
-        <div className="upgrade-coin-container">
+        <div className="upgrade-coin-container button">
           <h4>Hard Questions</h4>
           <div className="coin-cost-container">
             20

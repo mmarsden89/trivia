@@ -9,10 +9,13 @@ const Card = (props) => {
     setCheckedOption(answer);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmitCard = (event) => {
     event.preventDefault();
     setAnswered(true);
-    if (props.cor === checkedOption) props.handleFireworks(true);
+    if (props.cor === checkedOption) {
+      props.handleFireworks(true);
+      props.handleScore();
+    }
   };
 
   const handleNextQuest = () => {
@@ -45,7 +48,7 @@ const Card = (props) => {
             ))}
         </form>
         <button
-          onClick={handleSubmit}
+          onClick={handleSubmitCard}
           type="submit"
           disabled={!checkedOption}
           className="button submit"
