@@ -1,35 +1,42 @@
 [
   {
+    "level": "medium",
     "question": "Who's the creator of Geometry Dash?",
     "correct": "Robert Topala",
     "incorrect": ["Scott Cawthon", "Adam Engels", "Andrew Spinks"]
   },
   {
+    "level": "medium",
     "question": "Who was the mascot of SEGA before Sonic the Hedgehog?",
     "correct": "Alex Kidd",
     "incorrect": ["Opa Opa", "NiGHTS", "Ristar"]
   },
   {
+    "level": "medium",
     "question": "Who is the founder and leader of industrial rock band, Nine Inch Nails?",
     "correct": "Trent Reznor",
     "incorrect": ["Marilyn Manson", "Robin Finck", "Josh Homme"]
   },
   {
+    "level": "medium",
     "question": "Velma Kelly and Roxie Hart are the protagonists of which Oscar winning movie?",
     "correct": "Chicago",
     "incorrect": ["Dreamgirls", "Cabaret", "All That Jazz"]
   },
   {
+    "level": "medium",
     "question": "What is the largest non-continental island in the world?",
     "correct": "Greenland",
     "incorrect": ["New Guinea", "Borneo", "Madagascar"]
   },
   {
+    "level": "medium",
     "question": "The Hippogriff, not to be confused with the Griffon, is a magical creature with the front half of an eagle, and the back half of what?",
     "correct": "A Horse",
     "incorrect": ["A Dragon", "A Tiger", "A Lion"]
   },
   {
+    "level": "medium",
     "question": "What does AD stand for in relation to Windows Operating Systems?",
     "correct": "Active Directory",
     "incorrect": [
@@ -39,11 +46,13 @@
     ]
   },
   {
+    "level": "medium",
     "question": "By what nickname is Jack Dawkins known in the Charles Dickens novel, Oliver Twist?",
     "correct": "The Artful Dodger",
     "incorrect": ["Fagin", "Bulls-eye", "Mr. Fang"]
   },
   {
+    "level": "medium",
     "question": "Which of these features was added in the 1994 game Heretic that the original DOOM could not add due to limitations?",
     "correct": "Looking up and down",
     "incorrect": [
@@ -53,11 +62,13 @@
     ]
   },
   {
+    "level": "medium",
     "question": "In what year was the original Sonic the Hedgehog game released?",
     "correct": "1991",
     "incorrect": ["1989", "1993", "1995"]
   },
   {
+    "level": "medium",
     "question": "Which of the following Ivy League universities has its official motto in Hebrew as well as in Latin?",
     "correct": "Yale University",
     "incorrect": [
@@ -67,6 +78,7 @@
     ]
   },
   {
+    "level": "medium",
     "question": "What is the setting of the show Parks and Recreation?",
     "correct": "Pawnee, Indiana",
     "incorrect": [
@@ -76,21 +88,25 @@
     ]
   },
   {
+    "level": "medium",
     "question": "What was the name of the Secret Organization in the Hotline Miami series?",
     "correct": "50 Blessings",
     "incorrect": ["American Blessings", "50 Saints", "USSR Blessings"]
   },
   {
+    "level": "medium",
     "question": "What is the unit of currency in Laos?",
     "correct": "Kip",
     "incorrect": ["Ruble", "Konra", "Dollar"]
   },
   {
+    "level": "medium",
     "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 Need You?",
     "correct": "NGHTMRE",
     "incorrect": ["LOUDPVCK", "KRNE", "DVBBS"]
   },
   {
+    "level": "medium",
     "question": "In the Portal series, Aperture Science was founded under what name in the early 1940s?",
     "correct": "Aperture Fixtures",
     "incorrect": [
@@ -100,31 +116,37 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Which one of these is not an official development name for a Ubuntu release?",
     "correct": "Mystic Mansion",
     "incorrect": ["Trusty Tahr", "Utopic Unicorn", "Wily Werewolf"]
   },
   {
+    "level": "medium",
     "question": "The main antagonist of the second part of JoJo Bizarre Adventure is which of the following?",
     "correct": "Kars",
     "incorrect": ["Erina Joestar", "Santana", "Wired Beck"]
   },
   {
+    "level": "medium",
     "question": "In the 1979 British film Quadrophenia what is the name of the main protagonist?",
     "correct": "Jimmy Cooper",
     "incorrect": ["Pete Townshend", "Franc Roddam", "Archie Bunker"]
   },
   {
+    "level": "medium",
     "question": "How many times was Albert Einstein married in his lifetime?",
     "correct": "Twice",
     "incorrect": ["Five", "Thrice", "Once"]
   },
   {
+    "level": "medium",
     "question": "Who was the main antagonist of Max Payne 3 (2012)?",
     "correct": "Victor Branco",
     "incorrect": ["Alvaro Neves", "Armando Becker", "Milo Rego"]
   },
   {
+    "level": "medium",
     "question": "In Touhou: Embodiment of Scarlet Devil, what song plays during Flandre Scarlet boss fight?",
     "correct": "U.N. Owen Was Her",
     "incorrect": [
@@ -134,36 +156,43 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Which Game Development company made No Man Sky?",
     "correct": "Hello Games",
     "incorrect": ["Dovetail Games", "Valve", "Blizzard Entertainment"]
   },
   {
+    "level": "medium",
     "question": "When did Norway get its constitution?",
     "correct": "1814",
     "incorrect": ["1932", "1905", "1854"]
   },
   {
+    "level": "medium",
     "question": "How fast is USB 3.1 Gen 2 theoretically?",
     "correct": "10 Gb/s",
     "incorrect": ["5 Gb/s", "8 Gb/s", "1 Gb/s"]
   },
   {
+    "level": "medium",
     "question": "In the Portal series of games, who was the founder of Aperture Science?",
     "correct": "Cave Johnson",
     "incorrect": ["GLaDOs", "Wallace Breen", "Gordon Freeman"]
   },
   {
+    "level": "medium",
     "question": "In what year was McDonald founded?",
     "correct": "1955",
     "incorrect": ["1964", "1951", "1947"]
   },
   {
+    "level": "medium",
     "question": "Which of the following bands is Tom DeLonge not a part of?",
     "correct": "+44",
     "incorrect": ["Box Car Racer", "Blink-182", "Angels & Airwaves"]
   },
   {
+    "level": "medium",
     "question": "What video game genre were the original Warcraft games?",
     "correct": "RTS (Real Time Strategy)",
     "incorrect": [
@@ -173,21 +202,25 @@
     ]
   },
   {
+    "level": "medium",
     "question": "What was the soft drink Pepsi originally introduced as?",
     "correct": "Brad Drink",
     "incorrect": ["Pepsin Pop", "Carolina Cola", "Pepsin Syrup"]
   },
   {
+    "level": "medium",
     "question": "Which game is NOT part of the Science Adventure series by 5pb. and Nitroplus?",
     "correct": "Occultic; Nine",
     "incorrect": ["Steins; Gate", "Robotics; Notes", "Chaos; Child"]
   },
   {
+    "level": "medium",
     "question": "What breed of dog is Scooby Doo?",
     "correct": "Great Dane",
     "incorrect": ["Pit bull", "Boxer", "Doberman Pinscher"]
   },
   {
+    "level": "medium",
     "question": "Sean Bean voices the character of Martin Septim in which Elder Scrolls game?",
     "correct": "The Elder Scrolls IV: Oblivion",
     "incorrect": [
@@ -197,6 +230,7 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Which ones of these Mario Kart games was made for the Gameboy Advance?",
     "correct": "Mario Kart: Super Circuit",
     "incorrect": [
@@ -206,26 +240,31 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Alan Reed is known for providing the voice of which character?",
     "correct": "Fred Flintstone",
     "incorrect": ["Bugs Bunny", "Fangface", "G.I. Joe"]
   },
   {
+    "level": "medium",
     "question": "What continent is the country Lesotho in?",
     "correct": "Africa",
     "incorrect": ["Asia", "South America", "Europe"]
   },
   {
+    "level": "medium",
     "question": "The website Shut Up & Sit Down reviews which form of media?",
     "correct": "Board Games",
     "incorrect": ["Television Shows", "Video Games", "Films"]
   },
   {
+    "level": "medium",
     "question": "In Calvin and Hobbes, what is the name of the babysitter boyfriend?",
     "correct": "Charlie",
     "incorrect": ["Dave", "Charles", "Nathaniel"]
   },
   {
+    "level": "medium",
     "question": "When was the Grand Patriotic War in the USSR concluded?",
     "correct": "May 9th, 1945",
     "incorrect": [
@@ -235,11 +274,13 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Which boxing personality was one of the presenters in the 1999 revival of It a Knockout?",
     "correct": "Frank Bruno",
     "incorrect": ["Henry Cooper", "Muhammad Ali", "Joe Fraiser"]
   },
   {
+    "level": "medium",
     "question": "Which of these Disney classics was released in 1970?",
     "correct": "The Aristocats",
     "incorrect": [
@@ -249,31 +290,37 @@
     ]
   },
   {
+    "level": "medium",
     "question": "What is the official national language of Pakistan?",
     "correct": "Urdu",
     "incorrect": ["Indian", "Punjabi", "Pashto"]
   },
   {
+    "level": "medium",
     "question": "&;74&ndash;&;75 is a 1993 single from the album Ring by what American band?",
     "correct": "The Connells",
     "incorrect": ["R.E.M.", "The Ocean Blue", "The Bangles"]
   },
   {
+    "level": "medium",
     "question": "Brendan Fraser starred in the following movies, except which one?",
     "correct": "Titanic",
     "incorrect": ["Monkeybone", "Encino Man", "Mrs. Winterbourne"]
   },
   {
+    "level": "medium",
     "question": "Decapods are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
     "correct": "Krill",
     "incorrect": ["Lobsters", "Shrimp", "Crabs"]
   },
   {
+    "level": "medium",
     "question": "In the film Requiem for a Dream, what drug does Jared Leto character get addicted to?",
     "correct": "Heroin",
     "incorrect": ["Cocaine", "Marijuana", "Oxycodone"]
   },
   {
+    "level": "medium",
     "question": "What is Hypernatremia?",
     "correct": "Increase in blood sodium",
     "incorrect": [
@@ -283,16 +330,19 @@
     ]
   },
   {
+    "level": "medium",
     "question": "Who was the guitarist in the band The Doors?",
     "correct": "Robby Krieger",
     "incorrect": ["Eric Clapton", "John Densmore", "Jimi Hendrix"]
   },
   {
+    "level": "medium",
     "question": "The Proclaimers - I&;m Gonna Be (500 Miles) reached what position on the US Hot 100 Charts in 1993?",
     "correct": "3rd",
     "incorrect": ["8th", "1st", "5th"]
   },
   {
+    "level": "medium",
     "question": "Who is the main villain of Kirby Return to Dreamland?",
     "correct": "Magolor",
     "incorrect": ["Landia", "King Dedede", "Queen Sectonia "]

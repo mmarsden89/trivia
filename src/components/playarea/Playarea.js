@@ -62,18 +62,13 @@ const PlayArea = (props) => {
   const startPlay = () => {
     newGame();
     setGameOver(false);
-    console.log(cardQuestion);
     setPlaying(true);
   };
 
   useEffect(() => {
-    console.log(props.questions);
     setAllQuestions(props.questions.slice());
     if (playing) getQuestion();
-    console.log("getting here??");
-    console.log(props.newGame);
     if (props.newGame) {
-      // console.log("are we getting new game?");
       setPlaying(false);
       newGame();
     }
@@ -107,7 +102,7 @@ const PlayArea = (props) => {
   );
 
   const fireWorkHtml = (
-    <div className="pyro">
+    <div className="fireworks">
       <div className="before"></div>
       <div className="after"></div>
     </div>
@@ -120,6 +115,10 @@ const PlayArea = (props) => {
     </div>
   );
 
+  const currentLevelHTML = (
+    <div className="button level">{cardQuestion.level || "default"}</div>
+  );
+
   return (
     <div className="play-area-container">
       <div className="stat-container">
@@ -129,6 +128,7 @@ const PlayArea = (props) => {
             play?
           </button>
         )}
+        {count < 11 && playing && currentLevelHTML}
         {count < 11 && playing && scoreHtml}
       </div>
       {cardQuestion && count < 11 && !gameOver && playing && cardHtml}

@@ -1,50 +1,60 @@
 [
   {
+    "level": "easy",
     "question": "King Henry VIII was the second monarch of which European royal house?",
     "correct": "Tudor",
     "incorrect": ["York", "Stuart", "Lancaster"]
   },
   {
+    "level": "easy",
     "question": "In the Nintendo DS game Ghost Trick: Phantom Detective, what is the name of the hitman seen at the start of the game?",
     "correct": "Nearsighted Jeego",
     "incorrect": ["One Step Ahead Tengo", "Missile", "Cabanela"]
   },
   {
+    "level": "easy",
     "question": "Who wrote and directed the 1986 film Platoon?",
     "correct": "Oliver Stone",
     "incorrect": ["Francis Ford Coppola", "Stanley Kubrick", "Michael Cimino"]
   },
   {
+    "level": "easy",
     "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film The Fugitive?",
     "correct": "Tommy Lee Jones",
     "incorrect": ["Harrison Ford", "Harvey Keitel", "Martin Landau"]
   },
   {
+    "level": "easy",
     "question": "The body of the Egyptian Sphinx was based on which animal?",
     "correct": "Lion",
     "incorrect": ["Bull", "Horse", "Dog"]
   },
   {
+    "level": "easy",
     "question": "What name is given to all baby marsupials?",
     "correct": "Joey",
     "incorrect": ["Calf", "Pup", "Cub"]
   },
   {
+    "level": "easy",
     "question": "Which English guitarist has the nickname Slowhand?",
     "correct": "Eric Clapton",
     "incorrect": ["Mark Knopfler", "Jeff Beck", "Jimmy Page"]
   },
   {
+    "level": "easy",
     "question": "In past times, what would a gentleman keep in his fob pocket?",
     "correct": "Watch",
     "incorrect": ["Money", "Keys", "Notebook"]
   },
   {
+    "level": "easy",
     "question": "Ringo Starr of The Beatles mainly played what instrument?",
     "correct": "Drums",
     "incorrect": ["Bass", "Guitar", "Piano"]
   },
   {
+    "level": "easy",
     "question": "HTML is what type of language?",
     "correct": "Markup Language",
     "incorrect": [
@@ -54,71 +64,85 @@
     ]
   },
   {
+    "level": "easy",
     "question": "Who is the creator of the comic series The Walking Dead?",
     "correct": "Robert Kirkman",
     "incorrect": ["Stan Lee", "Malcolm Wheeler-Nicholson", "Robert Crumb"]
   },
   {
+    "level": "easy",
     "question": "Which sign of the zodiac is represented by the Crab?",
     "correct": "Cancer",
     "incorrect": ["Libra", "Virgo", "Sagittarius"]
   },
   {
+    "level": "easy",
     "question": "Which of these video game engines was made by the company Epic Games?",
     "correct": "Unreal",
     "incorrect": ["Unity", "Game Maker: Studio", "Cry Engine"]
   },
   {
+    "level": "easy",
     "question": "Which Russian oblast forms a border with Poland?",
     "correct": "Kaliningrad",
     "incorrect": ["Samara", "Nizhny Novgorod", "Omsk"]
   },
   {
+    "level": "easy",
     "question": "Which of the following ancient peoples was NOT classified as Hellenic (Greek)?",
     "correct": "Illyrians",
     "incorrect": ["Dorians", "Achaeans", "Ionians"]
   },
   {
+    "level": "easy",
     "question": "Which of these is NOT a team available in the game Pokemon Go?",
     "correct": "Team Rocket",
     "incorrect": ["Team Instinct", "Team Valor", "Team Mystic"]
   },
   {
+    "level": "easy",
     "question": "The Rio 2016 Summer Olympics held its closing ceremony on what date?",
     "correct": "August 21",
     "incorrect": ["August 23", "August 19", "August 17"]
   },
   {
+    "level": "easy",
     "question": "Who won the 2015 Formula 1 World Championship?",
     "correct": "Lewis Hamilton",
     "incorrect": ["Nico Rosberg", "Sebastian Vettel", "Jenson Button"]
   },
   {
+    "level": "easy",
     "question": "Which modern day country is the region that was known as Phrygia in ancient times?",
     "correct": "Turkey",
     "incorrect": ["Syria", "Greece", "Egypt"]
   },
   {
+    "level": "easy",
     "question": "Whats the Team Fortress 2 Scouts city of origin?",
     "correct": "Boston",
     "incorrect": ["Sydney", "Detroit", "New York"]
   },
   {
+    "level": "easy",
     "question": "Which of these characters is the mascot of the video game company SEGA?",
     "correct": "Sonic the Hedgehog",
     "incorrect": ["Dynamite Headdy", "Alex Kidd", "Opa-Opa"]
   },
   {
+    "level": "easy",
     "question": "Automobiles produced by Telsa Motors operate on which form of energy?",
     "correct": "Electricity",
     "incorrect": ["Gasoline", "Diesel", "Nuclear"]
   },
   {
+    "level": "easy",
     "question": "Five dollars is worth how many nickles?",
     "correct": "100",
     "incorrect": ["50", "25", "69"]
   },
   {
+    "level": "easy",
     "question": "What ingredients are required to make a cake in Minecraft?",
     "correct": "Milk, Sugar, Egg, and Wheat",
     "incorrect": [
@@ -128,106 +152,127 @@
     ]
   },
   {
+    "level": "easy",
     "question": "The name of Junko Enoshimas imposter at the beginning of Danganronpa: Trigger Happy Havoc is?",
     "correct": "Mukuro Ikusaba",
     "incorrect": ["Ryota Mitarai", "Ultimate Imposter", "Komaru Naegi"]
   },
   {
+    "level": "easy",
     "question": "In PROTOTYPE 2. who is referred to as Tango Primary?",
     "correct": "James Heller",
     "incorrect": ["Alex Mercer", "Dana Mercer", "Any Goliaths roaming around"]
   },
   {
+    "level": "easy",
     "question": "Which one of these songs did the group Men At Work NOT make?",
     "correct": "Safety Dance",
     "incorrect": ["Down Under", "Who Can It Be Now?", "Its a Mistake"]
   },
   {
+    "level": "easy",
     "question": "In Supernatural, whats is Sams brothers name?",
     "correct": "Dean",
     "incorrect": ["Dave", "Steve", "Mike"]
   },
   {
+    "level": "easy",
     "question": "In DuckTales, what is the name of the city where all the main characters live?",
     "correct": "Duckburg",
     "incorrect": ["Duckwing", "Tailspin", "Wingford"]
   },
   {
+    "level": "easy",
     "question": "In Jurassic World, what is the name of the dinosaur that is a genetic hybrid?",
     "correct": "Indominus Rex",
     "incorrect": ["Mosasaurus", "Pteranodon", "Tyrannosaurus Rex "]
   },
   {
+    "level": "easy",
     "question": "Who are the original creators of Rachet & Clank?",
     "correct": "Insomniac Games",
     "incorrect": ["PixelTail Games", "Rare", "Bethesda"]
   },
   {
+    "level": "easy",
     "question": "How many points did LeBron James score in his first NBA game?",
     "correct": "25",
     "incorrect": ["19", "69", "41"]
   },
   {
+    "level": "easy",
     "question": "What is the capital of the US State of New York?",
     "correct": "Albany",
     "incorrect": ["Buffalo", "New York", "Rochester"]
   },
   {
+    "level": "easy",
     "question": "In the movie Gremlins, after what time of day should you not feed Mogwai?",
     "correct": "Midnight",
     "incorrect": ["Evening", "Morning", "Afternoon"]
   },
   {
+    "level": "easy",
     "question": "Who stars in Brutal Legend?",
     "correct": "Jack Black",
     "incorrect": ["Kanye West", "Lemmy", "Ozzy Osbourne"]
   },
   {
+    "level": "easy",
     "question": "Minecraft was released from beta in 2011 during a convention held in which city?",
     "correct": "Las Vegas",
     "incorrect": ["Paris", "Bellevue", "London"]
   },
   {
+    "level": "easy",
     "question": "What is Everests favorite food in the Nickelodeon/Nick Jr. series PAW Patrol?",
     "correct": "Liver",
     "incorrect": ["Chicken", "Steak", "Caribou"]
   },
   {
+    "level": "easy",
     "question": "Which Call Of Duty: Zombies map introduced the Staffs Of The Ancients?",
     "correct": "Origins",
     "incorrect": ["Shangri-La", "Revelations", "Nuketown"]
   },
   {
+    "level": "easy",
     "question": "Who is the colossal titan in Attack On Titan?",
     "correct": "Bertolt Hoover",
     "incorrect": ["Reiner", "Eren", "Sasha"]
   },
   {
+    "level": "easy",
     "question": "The likeness of which president is featured on the rare $2 bill of USA currency?",
     "correct": "Thomas Jefferson",
     "incorrect": ["Martin Van Buren", "Ulysses Grant", "John Quincy Adams"]
   },
   {
+    "level": "easy",
     "question": "What is the name of Manchester Uniteds home stadium?",
     "correct": "Old Trafford",
     "incorrect": ["Anfield", "City of Manchester Stadium", "St James Park"]
   },
   {
+    "level": "easy",
     "question": "Earth is located in which galaxy?",
     "correct": "The Milky Way Galaxy",
     "incorrect": ["The Mars Galaxy", "The Galaxy Note", "The Black Hole"]
   },
   {
+    "level": "easy",
     "question": "Which Nintendo 64 game did NOT have Luigi in it?",
     "correct": "Super Mario 64",
     "incorrect": ["Mario Party 2", "Paper Mario", "Super Smash Bros."]
   },
   {
+    "level": "easy",
     "question": "What name is the main character Chihiro given in the 2001 movie Spirited Away?",
     "correct": "Sen (Thousand)",
     "incorrect": ["Hyaku (Hundred)", "Ichiman (Ten thousand)", "Juu (Ten)"]
   },
   {
+    "level": "easy",
     "question": "What does the United States of America celebrate during the 4th of July?",
     "correct": "The signing of the Declaration of Independence",
     "incorrect": [
@@ -237,21 +282,25 @@
     ]
   },
   {
+    "level": "easy",
     "question": "What is Jean ValJeans first prisoner number?",
     "correct": "24601",
     "incorrect": ["9430", "1729", "32769"]
   },
   {
+    "level": "easy",
     "question": "In Homestuck the Kingdom of Darkness is also known as?",
     "correct": "Derse",
     "incorrect": ["Skaia", "Prospit", "The Medium"]
   },
   {
+    "level": "easy",
     "question": "In the survival horror game, Cry of Fear, what was the name of Simons close friend/potential love interest?",
     "correct": "Sophie",
     "incorrect": ["Olivia", "Jessica", "Alice"]
   },
   {
+    "level": "easy",
     "question": "Grande Valse is a phrase from the song Gran Vals. What is that song segment known as?",
     "correct": "Nokia Tune",
     "incorrect": [

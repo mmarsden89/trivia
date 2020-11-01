@@ -88,10 +88,26 @@ const Menu = (props) => {
       <div className="project-container">
         <h2>Project Details</h2>
         <div>
-          <h4>Repository</h4>
+          <a
+            href="https://github.com/mmarsden89/trivia"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <h4 className="upgrade-coin-container button link">Repository</h4>
+          </a>
         </div>
         <div>
-          <h4>Developer Portfolio</h4>
+          <a
+            href="https://mmarsden89.github.io"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <h4 className="upgrade-coin-container button link">
+              Developer Portfolio
+            </h4>
+          </a>
         </div>
       </div>
     </div>

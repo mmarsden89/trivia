@@ -33,7 +33,7 @@
 }
 
 .project-container {
-  height: 100px;
+  height: 115px;
 }
 
 .upgrade-container > h2,
@@ -48,6 +48,11 @@
   justify-content: space-evenly;
   width: 200px;
   margin: 0 auto;
+}
+
+.link {
+  margin-top: 5px;
+  color: $background !important;
 }
 
 .coin-cost-container {
