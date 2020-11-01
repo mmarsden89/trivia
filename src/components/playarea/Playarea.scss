@@ -21,7 +21,7 @@
 }
 
 .start-play {
-  background: $lightpurple;
+  background-color: $lightpurple;
   position: relative;
   height: 335px;
   width: 550px;
@@ -30,6 +30,79 @@
   cursor: pointer;
   font-size: 40px !important;
   border-radius: 25px !important;
+  transition: 0.25s;
+  animation: 5s wiggle linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: skewY(0deg);
+  }
+  5% {
+    transform: skewY(0deg);
+  }
+  10% {
+    transform: skewY(0deg);
+  }
+  15% {
+    transform: skewY(0.7deg);
+  }
+  20% {
+    transform: skewY(-0.7deg);
+  }
+  25% {
+    transform: skewY(0deg);
+  }
+  30% {
+    transform: skewY(0deg);
+  }
+  35% {
+    transform: skewY(0.7deg);
+  }
+  40% {
+    transform: skewY(-0.7deg);
+  }
+  45% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(0deg);
+  }
+  55% {
+    transform: skewY(0deg);
+  }
+  60% {
+    transform: skewY(0deg);
+  }
+  65% {
+    transform: skewY(0deg);
+  }
+  70% {
+    transform: skewY(0deg);
+  }
+  75% {
+    transform: skewY(0deg);
+  }
+  80% {
+    transform: skewY(0.7deg);
+  }
+  85% {
+    transform: skewY(-0.7deg);
+  }
+  90% {
+    transform: skewY(0deg);
+  }
+  95% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+.start-play:hover {
+  background-color: $purple;
 }
 
 .stat-container {

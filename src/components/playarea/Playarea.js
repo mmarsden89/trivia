@@ -13,19 +13,19 @@ const PlayArea = (props) => {
   const [fireworks, setFireworks] = useState(false);
   const [playing, setPlaying] = useState(false);
 
-  const sortAnswers = async (question) => {
+  const sortAnswers = (question) => {
     return [...question.incorrect, question.correct].sort(
       () => Math.random() - 0.5
     );
   };
 
-  const sortQuestions = async () => {
+  const sortQuestions = () => {
     allQuestions.sort(() => Math.random() - 0.5);
   };
 
-  const getQuestion = async () => {
-    await sortQuestions();
-    const answersSort = await sortAnswers(allQuestions[0]);
+  const getQuestion = () => {
+    sortQuestions();
+    const answersSort = sortAnswers(allQuestions[0]);
     setAnswers(answersSort);
     setCardQuestion(allQuestions[0]);
     allQuestions.shift();

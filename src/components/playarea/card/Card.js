@@ -53,7 +53,7 @@ const Card = (props) => {
           disabled={!checkedOption}
           className="button submit"
           style={{
-            backgroundColor: !checkedOption ? "#add3d9" : "#80d2de",
+            backgroundColor: !checkedOption ? "#81cad6" : "#59a6b3",
             cursor: !checkedOption ? "not-allowed" : "pointer",
           }}
         >
