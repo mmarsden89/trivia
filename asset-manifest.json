@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/trividuh/static/css/main.ffc42502.chunk.css",
+    "main.css": "/trividuh/static/css/main.94d544b5.chunk.css",
     "main.js": "/trividuh/static/js/main.b0fdfd47.chunk.js",
     "main.js.map": "/trividuh/static/js/main.b0fdfd47.chunk.js.map",
     "runtime-main.js": "/trividuh/static/js/runtime-main.600805df.js",
@@ -10,13 +10,13 @@
     "static/js/3.49a860e0.chunk.js": "/trividuh/static/js/3.49a860e0.chunk.js",
     "static/js/3.49a860e0.chunk.js.map": "/trividuh/static/js/3.49a860e0.chunk.js.map",
     "index.html": "/trividuh/index.html",
-    "static/css/main.ffc42502.chunk.css.map": "/trividuh/static/css/main.ffc42502.chunk.css.map",
+    "static/css/main.94d544b5.chunk.css.map": "/trividuh/static/css/main.94d544b5.chunk.css.map",
     "static/js/2.833acecb.chunk.js.LICENSE.txt": "/trividuh/static/js/2.833acecb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.600805df.js",
     "static/js/2.833acecb.chunk.js",
-    "static/css/main.ffc42502.chunk.css",
+    "static/css/main.94d544b5.chunk.css",
     "static/js/main.b0fdfd47.chunk.js"
   ]
 }
