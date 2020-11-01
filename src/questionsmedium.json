@@ -41,7 +41,7 @@
   {
     "question": "By what nickname is Jack Dawkins known in the Charles Dickens novel, Oliver Twist?",
     "correct": "The Artful Dodger",
-    "incorrect": ["Fagin", "Bull&rsquo;s-eye", "Mr. Fang"]
+    "incorrect": ["Fagin", "Bulls-eye", "Mr. Fang"]
   },
   {
     "question": "Which of these features was added in the 1994 game Heretic that the original DOOM could not add due to limitations?",
@@ -161,7 +161,7 @@
   {
     "question": "Which of the following bands is Tom DeLonge not a part of?",
     "correct": "+44",
-    "incorrect": ["Box Car Racer", "Blink-182", "Angels &amp; Airwaves"]
+    "incorrect": ["Box Car Racer", "Blink-182", "Angels & Airwaves"]
   },
   {
     "question": "What video game genre were the original Warcraft games?",
@@ -216,7 +216,7 @@
     "incorrect": ["Asia", "South America", "Europe"]
   },
   {
-    "question": "The website Shut Up &amp; Sit Down reviews which form of media?",
+    "question": "The website Shut Up & Sit Down reviews which form of media?",
     "correct": "Board Games",
     "incorrect": ["Television Shows", "Video Games", "Films"]
   },

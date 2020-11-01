@@ -15,7 +15,7 @@ const Menu = (props) => {
     setEasy(cookies.easy === "true");
     setMedium(cookies.medium === "true");
     setHard(cookies.hard === "true");
-  }, [cookieNum]);
+  }, [cookieNum, easy, medium, hard]);
 
   return (
     <div className="menu-container">
@@ -31,9 +31,7 @@ const Menu = (props) => {
         >
           <h4>Easy Questions</h4>
           {easy ? (
-            <div id="easy-owned" onClick={props.handleQuestionSet}>
-              owned
-            </div>
+            <div id="easy-owned">owned</div>
           ) : (
             <div className="coin-cost-container">
               20
@@ -51,9 +49,7 @@ const Menu = (props) => {
         >
           <h4>Medium Questions</h4>
           {medium ? (
-            <div id="medium-owned" onClick={props.handleQuestionSet}>
-              owned{" "}
-            </div>
+            <div id="medium-owned">owned </div>
           ) : (
             <div className="coin-cost-container">
               20
@@ -71,9 +67,7 @@ const Menu = (props) => {
         >
           <h4>Hard Questions</h4>
           {hard ? (
-            <div id="hard-owned" onClick={props.handleQuestionSet}>
-              owned
-            </div>
+            <div id="hard-owned">owned</div>
           ) : (
             <div className="coin-cost-container">
               20

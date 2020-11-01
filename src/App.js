@@ -5,13 +5,17 @@ import PlayArea from "./components/playarea/PlayArea.js";
 import Menu from "./components/menu/Menu.js";
 import Footer from "./components/footer/Footer.js";
 import Cookie from "./components/cookie/Cookie.js";
+import questions from "./questions.json";
+import questionseasy from "./questionseasy.json";
+import questionsmedium from "./questionsmedium.json";
+import questionshard from "./questionshard.json";
 
 function App() {
   const [menu, setMenu] = useState(false);
   const [cookie, setCookie] = useState(false);
   const [cookieNum, setCookieNum] = useState(0);
   const [score, setScore] = useState(0);
-  const [questionSet, setQuestionSet] = useState("default");
+  const [questionSet, setQuestionSet] = useState(questions);
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -30,24 +34,26 @@ function App() {
   const handleCookieInfo = (type) => {
     let cookieJSON = JSON.parse(document.cookie);
     let cookieScore = parseFloat(cookieJSON.score);
-    let easyScore = false;
-    let mediumScore = false;
-    let hardScore = false;
+    let easyScore = cookieJSON.easy === "true";
+    let mediumScore = cookieJSON.medium === "true";
+    let hardScore = cookieJSON.hard === "true";
     if (type === "score") {
       cookieScore = cookieScore + 1;
       setCookieNum(cookieScore);
-    } else if (type === "easy") {
-      easyScore = true;
-      cookieScore = cookieScore - 20;
-      setCookieNum(cookieScore);
-    } else if (type === "medium") {
-      mediumScore = true;
-      cookieScore = cookieScore - 20;
-      setCookieNum(cookieScore);
-    } else if (type === "hard") {
-      hardScore = true;
-      cookieScore = cookieScore - 20;
-      setCookieNum(cookieScore);
+    } else if (cookieScore >= 20) {
+      if (type === "easy" && !easyScore) {
+        easyScore = true;
+        cookieScore = cookieScore - 20;
+        setCookieNum(cookieScore);
+      } else if (type === "medium" && !mediumScore) {
+        mediumScore = true;
+        cookieScore = cookieScore - 20;
+        setCookieNum(cookieScore);
+      } else if (type === "hard" && !hardScore) {
+        hardScore = true;
+        cookieScore = cookieScore - 20;
+        setCookieNum(cookieScore);
+      }
     }
     document.cookie = JSON.stringify({
       score: `${cookieScore}`,
@@ -66,24 +72,31 @@ function App() {
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
     if (JSON.parse(document.cookie)[type] === "true") {
-      setQuestionSet(type);
+      handleQuestionSet(type);
     } else {
       handleCookieInfo(type);
     }
   };
 
-  const handleQuestionSet = (event) => {
-    console.log(event);
+  const handleQuestionSet = (type) => {
+    if (type === "default") {
+      setQuestionSet(questions);
+    } else if (type === "easy") {
+      setQuestionSet(questionseasy);
+    } else if (type === "medium") {
+      setQuestionSet(questionsmedium);
+    } else {
+      setQuestionSet(questionshard);
+    }
   };
 
   useEffect(() => {
-    console.log(document.cookie);
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
       setCookieNum(JSON.parse(document.cookie).score);
     }
-  }, [cookie, cookieNum]);
+  }, [cookie, cookieNum, questionSet]);
 
   return (
     <div className="App">
@@ -91,14 +104,13 @@ function App() {
         <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
       </header>
       <div className="body-container">
-        {menu && (
-          <Menu
-            cookieNum={cookieNum}
-            handlePurchase={handlePurchase}
-            handleQuestionSet={handleQuestionSet}
-          />
-        )}
-        <PlayArea handleScore={handleScore} setScore={setScore} score={score} />
+        {menu && <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />}
+        <PlayArea
+          handleScore={handleScore}
+          setScore={setScore}
+          score={score}
+          questions={questionSet}
+        />
       </div>
       <Footer />
       {!cookie && <Cookie handleCookie={handleCookie} cookie={cookie} />}

@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./PlayArea.scss";
-import questions from "../../questions.json";
 import scoreRange from "../../scoreRange.json";
 
 import Card from "./card/Card.js";
 
 const PlayArea = (props) => {
   const [cardQuestion, setCardQuestion] = useState({});
-  const [allQuestions, setAllQuestions] = useState(questions);
+  const [allQuestions, setAllQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
   const [count, setCount] = useState(1);
   const [gameOver, setGameOver] = useState(false);
   const [fireworks, setFireworks] = useState(false);
+  const [playing, setPlaying] = useState(false);
 
   const sortAnswers = async (question) => {
     return [...question.incorrect, question.correct].sort(
@@ -20,7 +20,7 @@ const PlayArea = (props) => {
   };
 
   const getQuestion = async () => {
-    await allQuestions.sort(() => Math.random() - 0.5);
+    allQuestions.sort(() => Math.random() - 0.5);
     const answersSort = await sortAnswers(allQuestions[0]);
     setAnswers(answersSort);
     setCardQuestion(allQuestions[0]);
@@ -37,7 +37,7 @@ const PlayArea = (props) => {
   };
 
   const newGame = () => {
-    setAllQuestions(questions);
+    setAllQuestions(props.questions);
     flipGame();
     props.setScore(0);
     setCount(1);
@@ -45,9 +45,6 @@ const PlayArea = (props) => {
   };
 
   const handleSubmit = (answer) => {
-    // if (answer === cardQuestion.correct) {
-    //   props.handleScore();
-    // }
     if (count === 10) {
       setCount(count + 1);
       flipGame();
@@ -57,9 +54,14 @@ const PlayArea = (props) => {
     }
   };
 
+  const startPlay = () => {
+    setPlaying(true);
+  };
+
   useEffect(() => {
-    getQuestion();
-  }, [gameOver]);
+    setAllQuestions(props.questions);
+    if (playing) getQuestion();
+  }, [gameOver, allQuestions, props.questions, playing]);
 
   const cardHtml = (
     <Card
@@ -105,9 +107,14 @@ const PlayArea = (props) => {
     <div className="play-area-container">
       <div className="stat-container">
         {count < 11 && questionNumberHtml}
+        {!playing && (
+          <button onClick={startPlay} className="button">
+            play?
+          </button>
+        )}
         {count < 11 && scoreHtml}
       </div>
-      {cardQuestion && count < 11 && !gameOver && cardHtml}
+      {cardQuestion && count < 11 && !gameOver && playing && cardHtml}
       {count > 10 && gameOverHtml}
     </div>
   );
