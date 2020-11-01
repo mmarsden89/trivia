@@ -91,6 +91,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log(questionSet.length);
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);

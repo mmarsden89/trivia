@@ -11,7 +11,7 @@ const Header = (props) => {
       <div className="header-right-container">
         <div className="coin-header-container">
           <p className="cookie-num">{props.cookieNum || 0}</p>
-          <img src={coin} className="coin" />
+          <img src={coin} className="coin" alt="coin" />
         </div>
         <h1>Trivia</h1>
       </div>

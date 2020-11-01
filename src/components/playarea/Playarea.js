@@ -5,6 +5,7 @@ import scoreRange from "../../scoreRange.json";
 import Card from "./card/Card.js";
 
 const PlayArea = (props) => {
+  const [topLevel, setTopLevel] = useState();
   const [cardQuestion, setCardQuestion] = useState({});
   const [allQuestions, setAllQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
@@ -14,13 +15,18 @@ const PlayArea = (props) => {
   const [playing, setPlaying] = useState(false);
 
   const sortAnswers = async (question) => {
+    console.log(props.questions.length, allQuestions.length);
     return [...question.incorrect, question.correct].sort(
       () => Math.random() - 0.5
     );
   };
 
-  const getQuestion = async () => {
+  const sortQuestions = async () => {
     allQuestions.sort(() => Math.random() - 0.5);
+  };
+
+  const getQuestion = async () => {
+    await sortQuestions();
     const answersSort = await sortAnswers(allQuestions[0]);
     setAnswers(answersSort);
     setCardQuestion(allQuestions[0]);
@@ -37,7 +43,8 @@ const PlayArea = (props) => {
   };
 
   const newGame = () => {
-    setAllQuestions(props.questions);
+    const newQuestions = props.questions.slice();
+    setAllQuestions(newQuestions);
     props.setScore(0);
     setCount(1);
     getQuestion();
@@ -59,9 +66,10 @@ const PlayArea = (props) => {
   };
 
   useEffect(() => {
-    setAllQuestions(props.questions);
+    setAllQuestions(props.questions.slice());
     if (playing) getQuestion();
-  }, [gameOver, allQuestions, props.questions, playing]);
+    // eslint-disable-next-line
+  }, [gameOver, props.questions, playing]);
 
   const cardHtml = (
     <Card

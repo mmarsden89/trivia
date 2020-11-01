@@ -15,6 +15,7 @@ const Menu = (props) => {
     setEasy(cookies.easy === "true");
     setMedium(cookies.medium === "true");
     setHard(cookies.hard === "true");
+    // eslint-disable-next-line
   }, [cookieNum, easy, medium, hard]);
 
   return (
@@ -35,7 +36,7 @@ const Menu = (props) => {
           ) : (
             <div className="coin-cost-container">
               20
-              <img src={coin} className="coin" />
+              <img src={coin} className="coin" alt="coin" />
             </div>
           )}
         </div>
@@ -53,7 +54,7 @@ const Menu = (props) => {
           ) : (
             <div className="coin-cost-container">
               20
-              <img src={coin} className="coin" />
+              <img src={coin} className="coin" alt="coin" />
             </div>
           )}
         </div>
@@ -71,7 +72,7 @@ const Menu = (props) => {
           ) : (
             <div className="coin-cost-container">
               20
-              <img src={coin} className="coin" />
+              <img src={coin} className="coin" alt="coin" />
             </div>
           )}
         </div>

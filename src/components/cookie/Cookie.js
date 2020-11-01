@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Cookie.scss";
 
 const Cookie = (props) => {
