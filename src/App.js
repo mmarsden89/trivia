@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./media-queries.scss";
 import React, { useState, useEffect } from "react";
 import Header from "./components/header/Header.js";
 import PlayArea from "./components/playarea/PlayArea.js";
@@ -64,8 +65,6 @@ function App() {
       hard: `${hardScore}`,
     });
   };
-
-  
 
   const handleScore = () => {
     handleCookieInfo("score");
