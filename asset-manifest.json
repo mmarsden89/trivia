@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/trividuh/static/css/main.c7783da0.chunk.css",
-    "main.js": "/trividuh/static/js/main.0061c4b1.chunk.js",
-    "main.js.map": "/trividuh/static/js/main.0061c4b1.chunk.js.map",
-    "runtime-main.js": "/trividuh/static/js/runtime-main.2a2696ac.js",
-    "runtime-main.js.map": "/trividuh/static/js/runtime-main.2a2696ac.js.map",
-    "static/js/2.5bf852ed.chunk.js": "/trividuh/static/js/2.5bf852ed.chunk.js",
-    "static/js/2.5bf852ed.chunk.js.map": "/trividuh/static/js/2.5bf852ed.chunk.js.map",
-    "static/js/3.f6c0c70d.chunk.js": "/trividuh/static/js/3.f6c0c70d.chunk.js",
-    "static/js/3.f6c0c70d.chunk.js.map": "/trividuh/static/js/3.f6c0c70d.chunk.js.map",
+    "main.js": "/trividuh/static/js/main.59eeddae.chunk.js",
+    "main.js.map": "/trividuh/static/js/main.59eeddae.chunk.js.map",
+    "runtime-main.js": "/trividuh/static/js/runtime-main.ec05b492.js",
+    "runtime-main.js.map": "/trividuh/static/js/runtime-main.ec05b492.js.map",
+    "static/js/2.0e38ebc7.chunk.js": "/trividuh/static/js/2.0e38ebc7.chunk.js",
+    "static/js/2.0e38ebc7.chunk.js.map": "/trividuh/static/js/2.0e38ebc7.chunk.js.map",
+    "static/js/3.1124d986.chunk.js": "/trividuh/static/js/3.1124d986.chunk.js",
+    "static/js/3.1124d986.chunk.js.map": "/trividuh/static/js/3.1124d986.chunk.js.map",
     "index.html": "/trividuh/index.html",
     "static/css/main.c7783da0.chunk.css.map": "/trividuh/static/css/main.c7783da0.chunk.css.map",
-    "static/js/2.5bf852ed.chunk.js.LICENSE.txt": "/trividuh/static/js/2.5bf852ed.chunk.js.LICENSE.txt"
+    "static/js/2.0e38ebc7.chunk.js.LICENSE.txt": "/trividuh/static/js/2.0e38ebc7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a2696ac.js",
-    "static/js/2.5bf852ed.chunk.js",
+    "static/js/runtime-main.ec05b492.js",
+    "static/js/2.0e38ebc7.chunk.js",
     "static/css/main.c7783da0.chunk.css",
-    "static/js/main.0061c4b1.chunk.js"
+    "static/js/main.59eeddae.chunk.js"
   ]
 }
