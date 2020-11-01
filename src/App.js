@@ -25,6 +25,7 @@ function App() {
     let cookieScore = parseFloat(document.cookie.split("=")[1]);
     document.cookie = `score=${cookieScore + 1}`;
     let newScore = score + 1;
+    setCookieNum(cookieScore + 1);
     setScore(newScore);
   };
 
@@ -34,7 +35,7 @@ function App() {
       setCookie(true);
       setCookieNum(parseFloat(document.cookie.split("=")[1]));
     }
-  }, [cookie]);
+  }, [cookie, cookieNum]);
 
   return (
     <div className="App">
