@@ -19,17 +19,25 @@ function App() {
   const handleCookie = () => {
     setCookie(true);
     document.cookie = "score=0";
+    document.cookie = "easy=false";
+    document.cookie = "medium=false";
+    document.cookie = "hard=false";
   };
 
   const handleScore = () => {
-    let cookieScore = parseFloat(document.cookie.split("=")[1]);
+    let cookieScore = parseFloat(document.cookie.split(";")[0].split("=")[1]);
     document.cookie = `score=${cookieScore + 1}`;
     let newScore = score + 1;
     setCookieNum(cookieScore + 1);
     setScore(newScore);
   };
 
+  const handlePurchase = (event) => {
+    console.log(event.currentTarget.id);
+  };
+
   useEffect(() => {
+    console.log(document.cookie.split(";")[0]);
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
@@ -43,7 +51,7 @@ function App() {
         <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
       </header>
       <div className="body-container">
-        {menu && <Menu />}
+        {menu && <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />}
         <PlayArea handleScore={handleScore} setScore={setScore} score={score} />
       </div>
       <Footer />
