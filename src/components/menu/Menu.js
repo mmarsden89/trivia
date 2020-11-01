@@ -26,7 +26,7 @@ const Menu = (props) => {
       }}
     >
       <div className="upgrade-container">
-        <h2>Upgrades</h2>
+        <h2 style={{ overflowX: "hidden" }}>Upgrades</h2>
         <div
           className="upgrade-coin-container button"
           style={{ cursor: "pointer" }}
