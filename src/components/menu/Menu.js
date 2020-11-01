@@ -4,9 +4,20 @@ import coin from "../../coin.png";
 
 const Menu = (props) => {
   const [cookieNum, setCookieNum] = useState(0);
+  const [easy, setEasy] = useState(false);
+  const [medium, setMedium] = useState(false);
+  const [hard, setHard] = useState(false);
+
+  const cookies = JSON.parse(document.cookie);
+
   useEffect(() => {
+    console.log(document.cookie);
     setCookieNum(props.cookieNum);
+    setEasy(cookies.easy === "true");
+    setMedium(cookies.medium === "true");
+    setHard(cookies.hard === "true");
   }, [cookieNum]);
+
   return (
     <div className="menu-container">
       <div className="upgrade-container">
@@ -20,10 +31,14 @@ const Menu = (props) => {
           id="easy"
         >
           <h4>Easy Questions</h4>
-          <div className="coin-cost-container">
-            20
-            <img src={coin} className="coin" />
-          </div>
+          {easy ? (
+            <div>owned</div>
+          ) : (
+            <div className="coin-cost-container">
+              20
+              <img src={coin} className="coin" />
+            </div>
+          )}
         </div>
         <div
           className="upgrade-coin-container button"
@@ -34,10 +49,14 @@ const Menu = (props) => {
           id="medium"
         >
           <h4>Medium Questions</h4>
-          <div className="coin-cost-container">
-            20
-            <img src={coin} className="coin" />
-          </div>
+          {medium ? (
+            <div>owned </div>
+          ) : (
+            <div className="coin-cost-container">
+              20
+              <img src={coin} className="coin" />
+            </div>
+          )}
         </div>
         <div
           className="upgrade-coin-container button"
@@ -48,10 +67,14 @@ const Menu = (props) => {
           id="hard"
         >
           <h4>Hard Questions</h4>
-          <div className="coin-cost-container">
-            20
-            <img src={coin} className="coin" />
-          </div>
+          {hard ? (
+            <div>owned </div>
+          ) : (
+            <div className="coin-cost-container">
+              20
+              <img src={coin} className="coin" />
+            </div>
+          )}
         </div>
       </div>
       <div className="project-container">
