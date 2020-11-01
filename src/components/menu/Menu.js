@@ -8,7 +8,7 @@ const Menu = (props) => {
   const [medium, setMedium] = useState(false);
   const [hard, setHard] = useState(false);
 
-  const cookies = JSON.parse(document.cookie);
+  const cookies = JSON.parse(document.cookie.split("=")[1]);
 
   useEffect(() => {
     setCookieNum(props.cookieNum);

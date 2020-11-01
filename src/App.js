@@ -12,6 +12,7 @@ import questionsmedium from "./questionsmedium.json";
 import questionshard from "./questionshard.json";
 
 function App() {
+  console.log(document.cookie);
   const [menu, setMenu] = useState("");
   const [cookie, setCookie] = useState(false);
   const [cookieNum, setCookieNum] = useState(0);
@@ -26,22 +27,23 @@ function App() {
 
   const handleCookie = () => {
     setCookie(true);
-    document.cookie = JSON.stringify({
+    document.cookie = `cookie=${JSON.stringify({
       score: "0",
       easy: "false",
       medium: "false",
       hard: "false",
-    });
+    })}`;
   };
 
   const handleCookieInfo = (type) => {
-    let cookieJSON = JSON.parse(document.cookie);
+    let cookieJSON = JSON.parse(document.cookie.split("=")[1]);
+    console.log("easssyy", cookieJSON);
     let cookieScore = parseFloat(cookieJSON.score);
     let easyScore = cookieJSON.easy === "true";
     let mediumScore = cookieJSON.medium === "true";
     let hardScore = cookieJSON.hard === "true";
     if (type === "score") {
-      cookieScore = cookieScore + 1;
+      cookieScore = cookieScore + 100;
       setCookieNum(cookieScore);
     } else if (cookieScore >= 20) {
       if (type === "easy" && !easyScore) {
@@ -58,12 +60,14 @@ function App() {
         setCookieNum(cookieScore);
       }
     }
-    document.cookie = JSON.stringify({
+    let JSONdata = JSON.stringify({
       score: `${cookieScore}`,
       easy: `${easyScore}`,
       medium: `${mediumScore}`,
       hard: `${hardScore}`,
     });
+
+    document.cookie = `cookie=${JSONdata}`;
   };
 
   const handleScore = () => {
@@ -74,7 +78,10 @@ function App() {
 
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
-    if (JSON.parse(document.cookie)[type] === "true" || type === "default") {
+    if (
+      JSON.parse(document.cookie.split("=")[1])[type] === "true" ||
+      type === "default"
+    ) {
       handleQuestionSet(type);
     } else {
       handleCookieInfo(type);
@@ -115,7 +122,7 @@ function App() {
     setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
-      setCookieNum(JSON.parse(document.cookie).score);
+      setCookieNum(JSON.parse(document.cookie.split("=")[1]).score);
     }
     setNewGame(false);
   }, [cookie, cookieNum, questionSet]);
