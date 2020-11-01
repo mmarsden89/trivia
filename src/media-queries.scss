@@ -1,3 +1,5 @@
+@import "assets/styles/colors";
+
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 }
 
@@ -5,28 +7,25 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-  .answers {
-    // height: inherit;
-  }
-  .card-container {
-    width: 350px;
-  }
-  .form-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .level {
-    margin: 0;
-  }
-  .radio {
-    width: 200px;
-  }
-  .stat-container {
-    width: 340px;
-  }
-  .start-play {
-    width: 390px;
-  }
+  //   .card-container {
+  //     width: 350px;
+  //   }
+  //   .form-container {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  //   .level {
+  //     margin: 0;
+  //   }
+  //   .radio {
+  //     width: 200px;
+  //   }
+  //   .stat-container {
+  //     width: 340px;
+  //   }
+  //   .start-play {
+  //     width: 390px;
+  //   }
 }
 
 @media all and (max-width: 480px) {
@@ -56,28 +55,59 @@
 
 /* iPhone Portrait */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
-  //   .answers {
-  //     // height: inherit;
-  //   }
-  //   .card-container {
-  //     width: 350px;
-  //   }
-  //   .form-container {
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  //   .level {
-  //     margin: 0;
-  //   }
-  //   .radio {
-  //     width: 200px;
-  //   }
-  //   .stat-container {
-  //     width: 340px;
-  //   }
-  //   .start-play {
-  //     width: 390px;
-  //   }
+  .answers {
+    height: inherit !important;
+  }
+  .card-container {
+    margin-top: 10px !important;
+    width: 350px !important;
+  }
+
+  .cookie-container {
+    top: 20vh !important;
+    left: 0 !important;
+    width: 350px !important;
+    height: 300px !important;
+  }
+
+  .cookie-messaging > p {
+    padding: 10px !important;
+  }
+
+  .form-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .level {
+    margin: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .menu-container {
+    position: absolute !important;
+    z-index: 100 !important;
+    border-right: 5px solid $tealdark;
+  }
+
+  .radio {
+    margin: 10px auto !important;
+    width: 200px !important;
+  }
+
+  .score {
+    margin-left: -50px !important;
+  }
+  .stat-container {
+    margin-top: 70px !important;
+    width: 340px !important;
+  }
+  .start-play {
+    width: 400px !important;
+  }
+
+  .submit {
+    margin-bottom: 15px !important;
+  }
 }
 
 /* iPhone Landscape */
