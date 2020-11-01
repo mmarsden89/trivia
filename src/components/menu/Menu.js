@@ -94,7 +94,7 @@ const Menu = (props) => {
         <h2>Project Details</h2>
         <div>
           <a
-            href="https://github.com/mmarsden89/trivia"
+            href="https://github.com/mmarsden89/trividuh"
             target="_blank"
             rel="noreferrer"
             style={{ textDecoration: "none" }}
