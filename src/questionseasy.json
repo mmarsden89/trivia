@@ -5,17 +5,17 @@
     "incorrect": ["York", "Stuart", "Lancaster"]
   },
   {
-    "question": "In the Nintendo DS game &#039;Ghost Trick: Phantom Detective&#039;, what is the name of the hitman seen at the start of the game?",
+    "question": "In the Nintendo DS game Ghost Trick: Phantom Detective, what is the name of the hitman seen at the start of the game?",
     "correct": "Nearsighted Jeego",
     "incorrect": ["One Step Ahead Tengo", "Missile", "Cabanela"]
   },
   {
-    "question": "Who wrote and directed the 1986 film &#039;Platoon&#039;?",
+    "question": "Who wrote and directed the 1986 film Platoon?",
     "correct": "Oliver Stone",
     "incorrect": ["Francis Ford Coppola", "Stanley Kubrick", "Michael Cimino"]
   },
   {
-    "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film &quot;The Fugitive&quot;?",
+    "question": "Who played Deputy Marshal Samuel Gerard in the 1993 film The Fugitive?",
     "correct": "Tommy Lee Jones",
     "incorrect": ["Harrison Ford", "Harvey Keitel", "Martin Landau"]
   },
@@ -30,7 +30,7 @@
     "incorrect": ["Calf", "Pup", "Cub"]
   },
   {
-    "question": "Which English guitarist has the nickname &quot;Slowhand&quot;?",
+    "question": "Which English guitarist has the nickname Slowhand?",
     "correct": "Eric Clapton",
     "incorrect": ["Mark Knopfler", "Jeff Beck", "Jimmy Page"]
   },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "question": "Who is the creator of the comic series &quot;The Walking Dead&quot;?",
+    "question": "Who is the creator of the comic series The Walking Dead?",
     "correct": "Robert Kirkman",
     "incorrect": ["Stan Lee", "Malcolm Wheeler-Nicholson", "Robert Crumb"]
   },
@@ -84,7 +84,7 @@
     "incorrect": ["Team Instinct", "Team Valor", "Team Mystic"]
   },
   {
-    "question": "The Rio 2016 Summer Olympics held it&#039;s closing ceremony on what date?",
+    "question": "The Rio 2016 Summer Olympics held its closing ceremony on what date?",
     "correct": "August 21",
     "incorrect": ["August 23", "August 19", "August 17"]
   },
@@ -99,7 +99,7 @@
     "incorrect": ["Syria", "Greece", "Egypt"]
   },
   {
-    "question": "What&#039;s the Team Fortress 2 Scout&#039;s city of origin?",
+    "question": "Whats the Team Fortress 2 Scouts city of origin?",
     "correct": "Boston",
     "incorrect": ["Sydney", "Detroit", "New York"]
   },
@@ -128,22 +128,22 @@
     ]
   },
   {
-    "question": "The name of Junko Enoshima&#039;s imposter at the beginning of Danganronpa: Trigger Happy Havoc is?",
+    "question": "The name of Junko Enoshimas imposter at the beginning of Danganronpa: Trigger Happy Havoc is?",
     "correct": "Mukuro Ikusaba",
     "incorrect": ["Ryota Mitarai", "Ultimate Imposter", "Komaru Naegi"]
   },
   {
-    "question": "In PROTOTYPE 2. who is referred to as &quot;Tango Primary&quot;?",
+    "question": "In PROTOTYPE 2. who is referred to as Tango Primary?",
     "correct": "James Heller",
     "incorrect": ["Alex Mercer", "Dana Mercer", "Any Goliaths roaming around"]
   },
   {
-    "question": "Which one of these songs did the group &quot;Men At Work&quot; NOT make?",
+    "question": "Which one of these songs did the group Men At Work NOT make?",
     "correct": "Safety Dance",
-    "incorrect": ["Down Under", "Who Can It Be Now?", "It&#039;s a Mistake"]
+    "incorrect": ["Down Under", "Who Can It Be Now?", "Its a Mistake"]
   },
   {
-    "question": "In Supernatural, what&#039;s is Sam&#039;s brothers name?",
+    "question": "In Supernatural, whats is Sams brothers name?",
     "correct": "Dean",
     "incorrect": ["Dave", "Steve", "Mike"]
   },
@@ -153,12 +153,12 @@
     "incorrect": ["Duckwing", "Tailspin", "Wingford"]
   },
   {
-    "question": "In &quot;Jurassic World&quot;, what is the name of the dinosaur that is a genetic hybrid?",
+    "question": "In Jurassic World, what is the name of the dinosaur that is a genetic hybrid?",
     "correct": "Indominus Rex",
     "incorrect": ["Mosasaurus", "Pteranodon", "Tyrannosaurus Rex "]
   },
   {
-    "question": "Who are the original creators of Rachet &amp; Clank?",
+    "question": "Who are the original creators of Rachet & Clank?",
     "correct": "Insomniac Games",
     "incorrect": ["PixelTail Games", "Rare", "Bethesda"]
   },
@@ -183,7 +183,7 @@
     "incorrect": ["Kanye West", "Lemmy", "Ozzy Osbourne"]
   },
   {
-    "question": "&quot;Minecraft&quot; was released from beta in 2011 during a convention held in which city?",
+    "question": "Minecraft was released from beta in 2011 during a convention held in which city?",
     "correct": "Las Vegas",
     "incorrect": ["Paris", "Bellevue", "London"]
   },
@@ -193,17 +193,17 @@
     "incorrect": ["dr", "Dp", "r"]
   },
   {
-    "question": "What is Everest&#039;s favorite food in the Nickelodeon/Nick Jr. series &quot;PAW Patrol&quot;?",
+    "question": "What is Everests favorite food in the Nickelodeon/Nick Jr. series PAW Patrol?",
     "correct": "Liver",
     "incorrect": ["Chicken", "Steak", "Caribou"]
   },
   {
-    "question": "Which &quot;Call Of Duty: Zombies&quot; map introduced the &quot;Staffs Of The Ancients&quot;?",
+    "question": "Which Call Of Duty: Zombies map introduced the Staffs Of The Ancients?",
     "correct": "Origins",
     "incorrect": ["Shangri-La", "Revelations", "Nuketown"]
   },
   {
-    "question": "Who is the colossal titan in &quot;Attack On Titan&quot;?",
+    "question": "Who is the colossal titan in Attack On Titan?",
     "correct": "Bertolt Hoover",
     "incorrect": ["Reiner", "Eren", "Sasha"]
   },
@@ -213,7 +213,7 @@
     "incorrect": ["Martin Van Buren", "Ulysses Grant", "John Quincy Adams"]
   },
   {
-    "question": "What is the name of Manchester United&#039;s home stadium?",
+    "question": "What is the name of Manchester Uniteds home stadium?",
     "correct": "Old Trafford",
     "incorrect": ["Anfield", "City of Manchester Stadium", "St James Park"]
   },
@@ -228,7 +228,7 @@
     "incorrect": ["Mario Party 2", "Paper Mario", "Super Smash Bros."]
   },
   {
-    "question": "What name is the main character Chihiro given in the 2001 movie &quot;Spirited Away&quot;?",
+    "question": "What name is the main character Chihiro given in the 2001 movie Spirited Away?",
     "correct": "Sen (Thousand)",
     "incorrect": ["Hyaku (Hundred)", "Ichiman (Ten thousand)", "Juu (Ten)"]
   },
@@ -242,22 +242,22 @@
     ]
   },
   {
-    "question": "What is Jean ValJean&#039;s first prisoner number?",
+    "question": "What is Jean ValJeans first prisoner number?",
     "correct": "24601",
     "incorrect": ["9430", "1729", "32769"]
   },
   {
-    "question": "In &quot;Homestuck&quot; the &quot;Kingdom of Darkness&quot; is also known as?",
+    "question": "In Homestuck the Kingdom of Darkness is also known as?",
     "correct": "Derse",
     "incorrect": ["Skaia", "Prospit", "The Medium"]
   },
   {
-    "question": "In the survival horror game, &quot;Cry of Fear,&quot; what was the name of Simon&#039;s close friend/potential love interest?",
+    "question": "In the survival horror game, Cry of Fear, what was the name of Simons close friend/potential love interest?",
     "correct": "Sophie",
     "incorrect": ["Olivia", "Jessica", "Alice"]
   },
   {
-    "question": "&quot;Grande Valse&quot; is a phrase from the song &quot;Gran Vals&quot;. What is that song segment known as?",
+    "question": "Grande Valse is a phrase from the song Gran Vals. What is that song segment known as?",
     "correct": "Nokia Tune",
     "incorrect": [
       "Hello Moto [Motorola Ringtone]",

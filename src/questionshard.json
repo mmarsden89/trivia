@@ -1,16 +1,16 @@
 [
   {
-    "question": "Which was the first of Alfred Hitchcock&#039;s movies to be filmed in colour?",
+    "question": "Which was the first of Alfred Hitchcocks movies to be filmed in colour?",
     "correct": "Rope",
     "incorrect": ["Psycho", "Vertigo", "Rebecca"]
   },
   {
-    "question": "On which Beatles album would you find the song &#039;Eleanor Rigby&#039;?",
+    "question": "On which Beatles album would you find the song Eleanor Rigby?",
     "correct": "Revolver",
     "incorrect": ["Help!", "Rubber Soul", "Abbey Road"]
   },
   {
-    "question": "What is Ron Weasley&#039;s middle name?",
+    "question": "What is Ron Weasleys middle name?",
     "correct": "Bilius",
     "incorrect": ["Arthur", "John", "Dominic"]
   },
@@ -30,7 +30,7 @@
     "incorrect": ["Fiji", "Tuvalu", "Marshall Islands"]
   },
   {
-    "question": "What did the first vending machines in the early 1880&#039;s dispense?",
+    "question": "What did the first vending machines in the early 1880s dispense?",
     "correct": "Post cards",
     "incorrect": ["Alcohol", "Cigarettes", "Sodas "]
   },
@@ -40,7 +40,7 @@
     "incorrect": ["8", "2", "6"]
   },
   {
-    "question": "Which of the following is an existing family in &quot;The Sims&quot;?",
+    "question": "Which of the following is an existing family in The Sims?",
     "correct": "The Goth Family",
     "incorrect": ["The Family", "The Simoleon Family", "The Proud Family"]
   },
@@ -50,16 +50,12 @@
     "incorrect": ["Panthera onca", "Lynx rufus", "Felis catus"]
   },
   {
-    "question": "In 2012, which movie won every category in the 32nd &quot;Golden Raspberry Awards&quot;?",
+    "question": "In 2012, which movie won every category in the 32nd Golden Raspberry Awards?",
     "correct": "Jack and Jill",
-    "incorrect": [
-      "The Girl with the Dragon Tattoo",
-      "Thor",
-      "The King&#039;s Speech"
-    ]
+    "incorrect": ["The Girl with the Dragon Tattoo", "Thor", "The Kings Speech"]
   },
   {
-    "question": "What year was &quot;JoJo&#039;s Bizarre Adventure: Phantom Blood&quot; first released?",
+    "question": "What year was JoJos Bizarre Adventure: Phantom Blood first released?",
     "correct": "1987",
     "incorrect": ["2013", "1983", "1995"]
   },
@@ -79,7 +75,7 @@
     "incorrect": ["1775", "1774", "1777"]
   },
   {
-    "question": "What was Napoleon Bonaparte&#039;s name before he changed it?",
+    "question": "What was Napoleon Bonapartes name before he changed it?",
     "correct": "Napoleone di Buonaparte",
     "incorrect": [
       "Naapolion van Bonijpaart",
@@ -97,12 +93,12 @@
     ]
   },
   {
-    "question": "Which character, in the game &quot;Morenatsu&quot;, has the most possible endings to their route, at a total of four different endings?",
+    "question": "Which character, in the game Morenatsu, has the most possible endings to their route, at a total of four different endings?",
     "correct": "Shin Kuroi",
     "incorrect": ["Kouya Aotsuki", "Soutarou Touno", "Torahiko Ooshima"]
   },
   {
-    "question": "What North American tourist attraction is served by the &quot;Maid of the Mist&quot; tour company?",
+    "question": "What North American tourist attraction is served by the Maid of the Mist tour company?",
     "correct": "Niagara Falls",
     "incorrect": [
       "Whistler, British Columbia",
@@ -145,18 +141,14 @@
     "incorrect": ["CompuServe", "Prodigy", "GEnie"]
   },
   {
-    "question": "The &#039;D&#039; in the term &quot;D-Mail&quot; from the game &quot;Steins; Gate&quot; is short for what?",
+    "question": "The D in the term D-Mail from the game Steins; Gate is short for what?",
     "correct": "DeLorean",
     "incorrect": ["Deep", "Demo", "Dev"]
   },
   {
-    "question": "What is the name of Niccol&ograve; Machiavelli&#039;s work that argued effective leaders needed to crush their opponents at all costs?",
+    "question": "What is the name of Niccol&ograve; Machiavellis work that argued effective leaders needed to crush their opponents at all costs?",
     "correct": "The Prince",
-    "incorrect": [
-      "The Rape of Lucrece",
-      "Will to Power",
-      "Love&#039;s Labours Lost"
-    ]
+    "incorrect": ["The Rape of Lucrece", "Will to Power", "Loves Labours Lost"]
   },
   {
     "question": "How much radiation does a banana emit?",
@@ -174,8 +166,8 @@
     "incorrect": ["Byzantium", "Pomp and Power", "Palatinate"]
   },
   {
-    "question": "In &quot;Call Of Duty: Zombies&quot;, &quot;Richtofen&quot; is in possession of two filled blood vials belonging to who?",
-    "correct": "Sal DeLuca and Finn O&#039;Leary",
+    "question": "In Call Of Duty: Zombies, Richtofen is in possession of two filled blood vials belonging to who?",
+    "correct": "Sal DeLuca and Finn OLeary",
     "incorrect": [
       "Richtofen",
       "Al Arlington and Sal DeLuca",
@@ -183,7 +175,7 @@
     ]
   },
   {
-    "question": "In &quot;Gravity Falls&quot;, what does Quentin Trembley do when he is driven out from the White House?",
+    "question": "In Gravity Falls, what does Quentin Trembley do when he is driven out from the White House?",
     "correct": "Eat a salamander and jump out the window.",
     "incorrect": [
       "Leave in peace.",
@@ -192,12 +184,12 @@
     ]
   },
   {
-    "question": "Which of the following actors portrayed the Ninth Doctor in the British television show &quot;Doctor Who&quot;?",
+    "question": "Which of the following actors portrayed the Ninth Doctor in the British television show Doctor Who?",
     "correct": "Christopher Eccleston",
     "incorrect": ["David Tennant", "Matt Smith", "Tom Baker"]
   },
   {
-    "question": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie &quot;Avatar&quot;?",
+    "question": "Which actress portrayed Dr. Grace Augustine in the James Cameron movie Avatar?",
     "correct": "Sigourney Weaver",
     "incorrect": ["Jessica Chastain", "Melissa Beckett", "Alyssa Monroe "]
   },
@@ -216,7 +208,7 @@
     ]
   },
   {
-    "question": "In Margaret Atwood&#039;s &quot;The Handmaid&#039;s Tale&quot;, what is Offred&#039;s real name is implied to be?",
+    "question": "In Margaret Atwoods The Handmaids Tale, what is Offreds real name is implied to be?",
     "correct": "June",
     "incorrect": ["August", "April", "May"]
   },
@@ -226,12 +218,12 @@
     "incorrect": ["6", "3", "0"]
   },
   {
-    "question": "Bj&ouml;rk&#039;s &quot;Unison&quot; contains a sample of which Oval song?",
+    "question": "Bj&ouml;rks Unison contains a sample of which Oval song?",
     "correct": "Aero Deck",
     "incorrect": ["Textuell", "Panorama", "Do While"]
   },
   {
-    "question": "Some of the &quot;Fallen Empires&quot; cards from &quot;Magic: The Gathering&quot; were misprinted on the backs of which other card game?",
+    "question": "Some of the Fallen Empires cards from Magic: The Gathering were misprinted on the backs of which other card game?",
     "correct": "Wyvern",
     "incorrect": ["Pokemon", "Dominion", "Yu-Gi-Oh"]
   },
@@ -241,7 +233,7 @@
     "incorrect": ["Revenant", "Beast of Burden", "Dirtcowl Wurm"]
   },
   {
-    "question": "Which of the following games was NOT included in Valve&#039;s Orange Box?",
+    "question": "Which of the following games was NOT included in Valves Orange Box?",
     "correct": "Counter-Strike",
     "incorrect": ["Portal", "Half-Life 2: Episode Two", "Team Fortress 2"]
   },
@@ -289,7 +281,7 @@
     "incorrect": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
   },
   {
-    "question": "In &quot;Resident Evil 3&quot;, how many inventory slots does Jill have at the start of the game?",
+    "question": "In Resident Evil 3, how many inventory slots does Jill have at the start of the game?",
     "correct": "10",
     "incorrect": ["6", "8", "12"]
   }

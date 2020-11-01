@@ -1,16 +1,16 @@
 [
   {
-    "question": "Who&#039;s the creator of Geometry Dash?",
+    "question": "Who's the creator of Geometry Dash?",
     "correct": "Robert Topala",
     "incorrect": ["Scott Cawthon", "Adam Engels", "Andrew Spinks"]
   },
   {
-    "question": "Who was the mascot of SEGA before &quot;Sonic the Hedgehog&quot;?",
+    "question": "Who was the mascot of SEGA before Sonic the Hedgehog?",
     "correct": "Alex Kidd",
     "incorrect": ["Opa Opa", "NiGHTS", "Ristar"]
   },
   {
-    "question": "Who is the founder and leader of industrial rock band, &#039;Nine Inch Nails&#039;?",
+    "question": "Who is the founder and leader of industrial rock band, Nine Inch Nails?",
     "correct": "Trent Reznor",
     "incorrect": ["Marilyn Manson", "Robin Finck", "Josh Homme"]
   },
@@ -30,7 +30,7 @@
     "incorrect": ["A Dragon", "A Tiger", "A Lion"]
   },
   {
-    "question": "What does AD stand for in relation to Windows Operating Systems? ",
+    "question": "What does AD stand for in relation to Windows Operating Systems?",
     "correct": "Active Directory",
     "incorrect": [
       "Alternative Drive",
@@ -39,12 +39,12 @@
     ]
   },
   {
-    "question": "By what nickname is Jack Dawkins known in the Charles Dickens novel, &#039;Oliver Twist&#039;?",
+    "question": "By what nickname is Jack Dawkins known in the Charles Dickens novel, Oliver Twist?",
     "correct": "The Artful Dodger",
     "incorrect": ["Fagin", "Bull&rsquo;s-eye", "Mr. Fang"]
   },
   {
-    "question": "Which of these features was added in the 1994 game &quot;Heretic&quot; that the original &quot;DOOM&quot; could not add due to limitations?",
+    "question": "Which of these features was added in the 1994 game Heretic that the original DOOM could not add due to limitations?",
     "correct": "Looking up and down",
     "incorrect": [
       "Increased room sizes",
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "question": "What is the setting of the show &quot;Parks and Recreation&quot;?",
+    "question": "What is the setting of the show Parks and Recreation?",
     "correct": "Pawnee, Indiana",
     "incorrect": [
       "Eagleton, Indiana",
@@ -76,9 +76,9 @@
     ]
   },
   {
-    "question": "What was the name of the Secret Organization in the Hotline Miami series? ",
+    "question": "What was the name of the Secret Organization in the Hotline Miami series?",
     "correct": "50 Blessings",
-    "incorrect": ["American Blessings", "50 Saints", "USSR&#039;s Blessings"]
+    "incorrect": ["American Blessings", "50 Saints", "USSR Blessings"]
   },
   {
     "question": "What is the unit of currency in Laos?",
@@ -86,7 +86,7 @@
     "incorrect": ["Ruble", "Konra", "Dollar"]
   },
   {
-    "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 &quot;Need You&quot;?",
+    "question": "Which artist collaborated with American DJ Dillon Francis to release the song 2016 Need You?",
     "correct": "NGHTMRE",
     "incorrect": ["LOUDPVCK", "KRNE", "DVBBS"]
   },
@@ -105,12 +105,12 @@
     "incorrect": ["Trusty Tahr", "Utopic Unicorn", "Wily Werewolf"]
   },
   {
-    "question": "The main antagonist of the second part of JoJo&#039;s Bizarre Adventure is which of the following?",
+    "question": "The main antagonist of the second part of JoJo Bizarre Adventure is which of the following?",
     "correct": "Kars",
     "incorrect": ["Erina Joestar", "Santana", "Wired Beck"]
   },
   {
-    "question": "In the 1979 British film &quot;Quadrophenia&quot; what is the name of the main protagonist?",
+    "question": "In the 1979 British film Quadrophenia what is the name of the main protagonist?",
     "correct": "Jimmy Cooper",
     "incorrect": ["Pete Townshend", "Franc Roddam", "Archie Bunker"]
   },
@@ -122,10 +122,10 @@
   {
     "question": "Who was the main antagonist of Max Payne 3 (2012)?",
     "correct": "Victor Branco",
-    "incorrect": ["&Aacute;lvaro Neves", "Armando Becker", "Milo Rego"]
+    "incorrect": ["Alvaro Neves", "Armando Becker", "Milo Rego"]
   },
   {
-    "question": "In Touhou: Embodiment of Scarlet Devil, what song plays during Flandre Scarlet&#039;s boss fight?",
+    "question": "In Touhou: Embodiment of Scarlet Devil, what song plays during Flandre Scarlet boss fight?",
     "correct": "U.N. Owen Was Her",
     "incorrect": [
       "Septette for the Dead Princess",
@@ -134,7 +134,7 @@
     ]
   },
   {
-    "question": "Which Game Development company made No Man&#039;s Sky?",
+    "question": "Which Game Development company made No Man Sky?",
     "correct": "Hello Games",
     "incorrect": ["Dovetail Games", "Valve", "Blizzard Entertainment"]
   },
@@ -154,7 +154,7 @@
     "incorrect": ["GLaDOs", "Wallace Breen", "Gordon Freeman"]
   },
   {
-    "question": "In what year was McDonald&#039;s founded?",
+    "question": "In what year was McDonald founded?",
     "correct": "1955",
     "incorrect": ["1964", "1951", "1947"]
   },
@@ -174,7 +174,7 @@
   },
   {
     "question": "What was the soft drink Pepsi originally introduced as?",
-    "correct": "Brad&#039;s Drink",
+    "correct": "Brad Drink",
     "incorrect": ["Pepsin Pop", "Carolina Cola", "Pepsin Syrup"]
   },
   {
@@ -183,12 +183,12 @@
     "incorrect": ["Steins; Gate", "Robotics; Notes", "Chaos; Child"]
   },
   {
-    "question": "What breed of dog is &quot;Scooby Doo&quot;?",
+    "question": "What breed of dog is Scooby Doo?",
     "correct": "Great Dane",
     "incorrect": ["Pit bull", "Boxer", "Doberman Pinscher"]
   },
   {
-    "question": "Sean Bean voices the character of &quot;Martin Septim&quot; in which Elder Scrolls game?",
+    "question": "Sean Bean voices the character of Martin Septim in which Elder Scrolls game?",
     "correct": "The Elder Scrolls IV: Oblivion",
     "incorrect": [
       "The Elder Scrolls V: Skyrim",
@@ -216,12 +216,12 @@
     "incorrect": ["Asia", "South America", "Europe"]
   },
   {
-    "question": "The website &quot;Shut Up &amp; Sit Down&quot; reviews which form of media?",
+    "question": "The website Shut Up &amp; Sit Down reviews which form of media?",
     "correct": "Board Games",
     "incorrect": ["Television Shows", "Video Games", "Films"]
   },
   {
-    "question": "In Calvin and Hobbes, what is the name of the babysitter&#039;s boyfriend?",
+    "question": "In Calvin and Hobbes, what is the name of the babysitter boyfriend?",
     "correct": "Charlie",
     "incorrect": ["Dave", "Charles", "Nathaniel"]
   },
@@ -235,7 +235,7 @@
     ]
   },
   {
-    "question": "Which boxing personality was one of the presenters in the 1999 revival of It&#039;s a Knockout?",
+    "question": "Which boxing personality was one of the presenters in the 1999 revival of It a Knockout?",
     "correct": "Frank Bruno",
     "incorrect": ["Henry Cooper", "Muhammad Ali", "Joe Fraiser"]
   },
@@ -254,7 +254,7 @@
     "incorrect": ["Indian", "Punjabi", "Pashto"]
   },
   {
-    "question": "&#039;74&ndash;&#039;75 is a 1993 single from the album Ring by what American band?",
+    "question": "&;74&ndash;&;75 is a 1993 single from the album Ring by what American band?",
     "correct": "The Connells",
     "incorrect": ["R.E.M.", "The Ocean Blue", "The Bangles"]
   },
@@ -264,12 +264,12 @@
     "incorrect": ["Monkeybone", "Encino Man", "Mrs. Winterbourne"]
   },
   {
-    "question": "&quot;Decapods&quot; are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
+    "question": "Decapods are an order of ten-footed crustaceans.  Which of these are NOT decapods?",
     "correct": "Krill",
     "incorrect": ["Lobsters", "Shrimp", "Crabs"]
   },
   {
-    "question": "In the film &quot;Requiem for a Dream&quot;, what drug does Jared Leto&#039;s character get addicted to?",
+    "question": "In the film Requiem for a Dream, what drug does Jared Leto character get addicted to?",
     "correct": "Heroin",
     "incorrect": ["Cocaine", "Marijuana", "Oxycodone"]
   },
@@ -283,17 +283,17 @@
     ]
   },
   {
-    "question": "Who was the guitarist in the band &quot;The Doors&quot;?",
+    "question": "Who was the guitarist in the band The Doors?",
     "correct": "Robby Krieger",
     "incorrect": ["Eric Clapton", "John Densmore", "Jimi Hendrix"]
   },
   {
-    "question": "The Proclaimers - I&#039;m Gonna Be (500 Miles) reached what position on the US Hot 100 Charts in 1993?",
+    "question": "The Proclaimers - I&;m Gonna Be (500 Miles) reached what position on the US Hot 100 Charts in 1993?",
     "correct": "3rd",
     "incorrect": ["8th", "1st", "5th"]
   },
   {
-    "question": "Who is the main villain of Kirby&#039;s Return to Dreamland?",
+    "question": "Who is the main villain of Kirby Return to Dreamland?",
     "correct": "Magolor",
     "incorrect": ["Landia", "King Dedede", "Queen Sectonia "]
   }
