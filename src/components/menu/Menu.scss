@@ -6,6 +6,15 @@
   background-color: $teal;
   animation: pop 1s;
   width: 250px;
+  display: block !important;
+}
+
+.menu-container-close {
+  height: calc(100vh - 50px);
+  background-color: $teal;
+  animation: pop2 1s;
+  width: 0px;
+  display: block !important;
 }
 
 @keyframes pop {
@@ -14,6 +23,15 @@
   }
   to {
     width: 250px;
+  }
+}
+
+@keyframes pop2 {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 0px;
   }
 }
 

@@ -13,7 +13,7 @@ const Header = (props) => {
           <p className="cookie-num">{props.cookieNum || 0}</p>
           <img src={coin} className="coin" alt="coin" />
         </div>
-        <h1>Trivia</h1>
+        <h1>Trivia-Me</h1>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import questionsmedium from "./questionsmedium.json";
 import questionshard from "./questionshard.json";
 
 function App() {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState("");
   const [cookie, setCookie] = useState(false);
   const [cookieNum, setCookieNum] = useState(0);
   const [score, setScore] = useState(0);
@@ -111,9 +111,13 @@ function App() {
             <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
           </header>
           <div className="body-container">
-            {menu && (
-              <Menu cookieNum={cookieNum} handlePurchase={handlePurchase} />
-            )}
+            {
+              <Menu
+                cookieNum={cookieNum}
+                handlePurchase={handlePurchase}
+                menuTog={menu}
+              />
+            }
             <PlayArea
               handleScore={handleScore}
               setScore={setScore}

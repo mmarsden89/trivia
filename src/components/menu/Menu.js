@@ -11,15 +11,21 @@ const Menu = (props) => {
   const cookies = JSON.parse(document.cookie);
 
   useEffect(() => {
+    console.log(props.menuTog);
     setCookieNum(props.cookieNum);
     setEasy(cookies.easy === "true");
     setMedium(cookies.medium === "true");
     setHard(cookies.hard === "true");
     // eslint-disable-next-line
-  }, [cookieNum, easy, medium, hard, props.cookieNum]);
+  }, [cookieNum, easy, medium, hard, props.cookieNum, props.menuTog]);
 
   return (
-    <div className="menu-container">
+    <div
+      className={props.menuTog ? "menu-container" : "menu-container-close"}
+      style={{
+        opacity: typeof props.menuTog === "string" ? "0" : "1",
+      }}
+    >
       <div className="upgrade-container">
         <h2>Upgrades</h2>
         <div
