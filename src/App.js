@@ -40,10 +40,10 @@ function App() {
     if (type === "score") {
       cookieScore = cookieScore + 1;
       setCookieNum(cookieScore);
-    } else if (cookieScore >= 20) {
+    } else if (cookieScore >= 10) {
       if (type === "easy" && !easyScore) {
         easyScore = true;
-        cookieScore = cookieScore - 20;
+        cookieScore = cookieScore - 10;
         setCookieNum(cookieScore);
       } else if (type === "medium" && !mediumScore && cookieScore >= 30) {
         mediumScore = true;

@@ -46,7 +46,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 20 || easy ? "pointer" : "not-allowed",
+            cursor: cookieNum >= 10 || easy ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="easy"
@@ -56,7 +56,7 @@ const Menu = (props) => {
             <div id="easy-owned">owned</div>
           ) : (
             <div className="coin-cost-container" id="coin-cost-easy">
-              20
+              10
               <img src={coin} className="coin" alt="coin" />
             </div>
           )}
