@@ -1,20 +1,21 @@
 @import "../../assets/styles/colors";
 // @import "../../assets/styles/fonts";
 
-.menu-container {
-  height: calc(100vh - 50px);
-  background-color: $teal;
-  animation: pop 1s;
-  width: 250px;
-  display: block !important;
-}
-
+.menu-container,
 .menu-container-close {
   height: calc(100vh - 50px);
   background-color: $teal;
+  display: block !important;
+}
+
+.menu-container {
+  animation: pop 1s;
+  width: 250px;
+}
+
+.menu-container-close {
   animation: pop2 1s;
   width: 0px;
-  display: block !important;
 }
 
 @keyframes pop {

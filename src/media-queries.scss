@@ -55,6 +55,17 @@
 
 /* iPhone Portrait */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .answer-card {
+    width: 330px !important;
+    height: 530px !important;
+    top: 93px !important;
+  }
+
+  .answer-response {
+    margin-top: -135px !important;
+    width: 320px !important;
+  }
+
   .answers {
     height: inherit !important;
   }
@@ -83,10 +94,18 @@
     margin-right: 0 !important;
   }
 
-  .menu-container {
+  .menu-container,
+  .menu-container-close {
     position: absolute !important;
     z-index: 100 !important;
+  }
+
+  .menu-container {
     border-right: 5px solid $tealdark;
+  }
+
+  .menu-container-close {
+    // width: 0;
   }
 
   .radio {
@@ -106,7 +125,9 @@
   }
 
   .submit {
-    margin-bottom: 15px !important;
+    margin: 10px auto 15px auto !important;
+    width: 230px !important;
+    height: 60px !important;
   }
 }
 
