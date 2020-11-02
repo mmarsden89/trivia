@@ -97,7 +97,6 @@ function App() {
   };
 
   useEffect(() => {
-    setCookie(false);
     if (document.cookie.length > 0) {
       setCookie(true);
       setCookieNum(JSON.parse(document.cookie.split("=")[1]).score);
