@@ -41,7 +41,7 @@ function App() {
     let mediumScore = cookieJSON.medium === "true";
     let hardScore = cookieJSON.hard === "true";
     if (type === "score") {
-      cookieScore = cookieScore + 100;
+      cookieScore = cookieScore + 1;
       setCookieNum(cookieScore);
     } else if (cookieScore >= 20) {
       if (type === "easy" && !easyScore) {
