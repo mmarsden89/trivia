@@ -7,7 +7,7 @@
   cursor: pointer;
   display: none;
   height: 200px;
-  left: calc(100vh / 2 + 35px);
+  left: 30vw;
   position: absolute;
   top: 200px;
   width: 600px;
@@ -30,4 +30,16 @@
 .cookie-button {
   cursor: pointer;
   width: 100px;
+}
+
+@media (max-width: 1024px) {
+  .cookie-container {
+    left: 20vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .cookie-container {
+    left: 15vw;
+  }
 }

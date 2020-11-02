@@ -1,8 +1,5 @@
 @import "assets/styles/colors";
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-}
-
 @media all and (min-width: 768px) and (max-width: 1024px) {
 }
 
@@ -56,14 +53,14 @@
   }
 
   .cookie-container {
-    top: 20vh !important;
+    top: 30vh !important;
     left: 0 !important;
-    width: 350px !important;
+    width: 100vw;
     height: 300px !important;
   }
 
   .cookie-messaging > p {
-    padding: 10px !important;
+    padding: 10px 40px !important;
   }
 
   .form-container {
