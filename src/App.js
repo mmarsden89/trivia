@@ -1,11 +1,7 @@
 import "./App.scss";
 import "./media-queries.scss";
 import React, { useState, useEffect } from "react";
-import Header from "./components/header/Header.js";
-import PlayArea from "./components/playarea/PlayArea.js";
-import Menu from "./components/menu/Menu.js";
-import Footer from "./components/footer/Footer.js";
-import Cookie from "./components/cookie/Cookie.js";
+import { Footer, Cookie, Header, Menu, PlayArea } from "./components/index.js";
 import questions from "./questions.json";
 import questionseasy from "./questionseasy.json";
 import questionsmedium from "./questionsmedium.json";
