@@ -4,26 +4,26 @@
 
 .card-container,
 .answer-card {
-  height: 325px;
-  width: 550px;
   background-color: $background;
   border-radius: 25px;
-  transition: 0.25s;
+  height: 325px;
   margin: auto;
   margin-top: 30px;
+  width: 550px;
+  transition: 0.25s;
 }
 
 .answer-card {
-  top: 260px;
-  position: absolute;
-  z-index: 9 !important;
+  align-items: center;
   border: 10px solid $purple;
   display: flex;
+  height: 243px;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  height: 243px;
+  position: absolute;
+  top: 260px;
   width: 530px;
+  z-index: 9 !important;
 }
 
 .answer-response {
@@ -38,10 +38,10 @@
 
 .answers {
   border: 10px solid $purple;
-  border-top: none;
-  height: 225px;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  border-top: none;
+  height: 225px;
 }
 
 .child-answer {
@@ -59,38 +59,38 @@
 }
 
 .next-question {
-  margin-top: 150px;
-  width: 130px;
   background-color: $pink;
   cursor: pointer;
+  margin-top: 150px;
+  width: 130px;
 }
 
 .question,
 .answer-response {
-  font-size: 23px;
-  color: $background;
-  font-family: $wendy;
-  padding: 0 15px;
+  align-items: center;
   background-color: $lightpurple;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  height: 100px;
+  color: $background;
   display: flex;
+  font-family: $wendy;
+  font-size: 23px;
+  height: 100px;
   justify-content: center;
-  align-items: center;
+  padding: 0 15px;
 }
 
 .radio {
-  background-color: $teal;
-  width: 150px;
-  margin: 20px auto;
-  cursor: pointer;
-  white-space: pre-wrap;
-  height: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: $teal;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  margin: 20px auto;
+  justify-content: center;
   transition: 0.25s;
+  white-space: pre-wrap;
+  width: 150px;
 }
 
 .radio:hover {
@@ -99,6 +99,6 @@
 
 .submit {
   background-color: $blue;
-  width: 100px;
   margin-top: 25px;
+  width: 100px;
 }

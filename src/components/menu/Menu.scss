@@ -3,9 +3,9 @@
 
 .menu-container,
 .menu-container-close {
-  height: calc(100vh - 50px);
   background-color: $teal;
   display: block !important;
+  height: calc(100vh - 50px);
 }
 
 .menu-container {
@@ -38,11 +38,11 @@
 
 .upgrade-container,
 .project-container {
-  margin-top: 100px;
   color: $background;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 100px;
   overflow-x: hidden;
   white-space: nowrap;
 }
@@ -58,28 +58,28 @@
 .upgrade-container > h2,
 .project-container > h2 {
   font-family: "Wendy One", sans-serif;
-  width: 220px;
   margin: 0 auto;
+  width: 220px;
 }
 
 .upgrade-coin-container {
   display: flex;
   flex-direction: row;
-  white-space: nowrap;
   justify-content: space-evenly;
-  width: 200px;
   margin: 0 auto;
-}
-
-.link {
-  margin-top: 5px;
-  color: $background !important;
+  white-space: nowrap;
+  width: 200px;
 }
 
 .coin-cost-container {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  width: 50px;
   justify-content: space-evenly;
-  align-items: center;
+  width: 50px;
+}
+
+.link {
+  color: $background !important;
+  margin-top: 5px;
 }

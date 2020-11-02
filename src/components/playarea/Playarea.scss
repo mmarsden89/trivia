@@ -2,12 +2,12 @@
 @import "../../assets/styles/components";
 
 .play-area-container {
-  flex-grow: 2;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-grow: 2;
   height: calc(100vh - 50px);
+  justify-content: center;
 }
 
 .level {
@@ -21,18 +21,18 @@
 }
 
 .start-play {
-  background-color: $lightpurple;
-  position: relative;
-  height: 335px;
-  width: 550px;
-  bottom: 3%;
-  left: 0%;
-  cursor: pointer;
-  font-size: 40px !important;
-  border-radius: 25px !important;
-  transition: 0.25s;
   animation: 5s wiggle linear infinite;
   animation-delay: 4s;
+  background-color: $lightpurple;
+  border-radius: 25px !important;
+  bottom: 3%;
+  cursor: pointer;
+  font-size: 40px !important;
+  height: 335px;
+  left: 0%;
+  position: relative;
+  transition: 0.25s;
+  width: 550px;
 }
 
 @keyframes wiggle {
@@ -106,44 +106,44 @@
 }
 
 .stat-container {
-  margin-top: 150px;
   display: flex;
+  margin-top: 150px;
   flex-direction: row;
   justify-content: space-between;
   width: 550px;
 }
 
 .game-over {
-  height: 325px;
-  width: 550px;
+  align-items: center;
   background-color: $purple;
-  border-radius: 25px;
-  transition: 0.25s;
-  margin: auto;
   border: 10px solid $purple;
+  border-radius: 25px;
   color: $background;
   display: flex;
   flex-direction: column;
+  height: 325px;
   justify-content: space-evenly;
-  align-items: center;
+  margin: auto;
+  transition: 0.25s;
+  width: 550px;
 }
 
 .game-over-text {
-  font-weight: 900;
   font-size: 42px;
+  font-weight: 900;
   padding: 0 50px;
 }
 
 .game-over-message {
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
   padding: 0 100px;
 }
 
 .new-game {
+  background-color: $pink;
   cursor: pointer;
   width: 100px;
-  background-color: $pink;
 }
 
 .question-number {
@@ -155,8 +155,8 @@
 .before,
 .after {
   height: 0;
-  top: 10px;
   left: 20px;
+  top: 10px;
 }
 
 .fireworks > .before,

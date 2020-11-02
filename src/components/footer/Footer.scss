@@ -1,13 +1,13 @@
 @import "../../assets/styles/colors";
 
 .footer-container {
-  background-color: $purple;
-  height: 50px;
-  width: 100vw;
-  position: absolute;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: $purple;
   color: $background;
+  display: flex;
+  height: 50px;
   font-weight: 700;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
 }
