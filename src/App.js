@@ -12,7 +12,6 @@ import questionsmedium from "./questionsmedium.json";
 import questionshard from "./questionshard.json";
 
 function App() {
-  console.log(document.cookie);
   const [menu, setMenu] = useState("");
   const [cookie, setCookie] = useState(false);
   const [cookieNum, setCookieNum] = useState(0);
@@ -37,7 +36,6 @@ function App() {
 
   const handleCookieInfo = (type) => {
     let cookieJSON = JSON.parse(document.cookie.split("=")[1]);
-    console.log("easssyy", cookieJSON);
     let cookieScore = parseFloat(cookieJSON.score);
     let easyScore = cookieJSON.easy === "true";
     let mediumScore = cookieJSON.medium === "true";
@@ -142,6 +140,7 @@ function App() {
                 cookieNum={cookieNum}
                 handlePurchase={handlePurchase}
                 menuTog={menu}
+                toggleMenu={toggleMenu}
               />
             }
             <PlayArea

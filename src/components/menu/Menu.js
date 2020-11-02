@@ -10,6 +10,13 @@ const Menu = (props) => {
 
   const cookies = JSON.parse(document.cookie.split("=")[1]);
 
+  const handleClick = (e) => {
+    if (e.target.id) {
+    } else {
+      props.toggleMenu();
+    }
+  };
+
   useEffect(() => {
     setCookieNum(props.cookieNum);
     setEasy(cookies.easy === "true");
@@ -24,6 +31,7 @@ const Menu = (props) => {
       style={{
         opacity: typeof props.menuTog === "string" ? "0" : "1",
       }}
+      onClick={handleClick}
     >
       <div className="upgrade-container">
         <h2 style={{ overflowX: "hidden" }}>Upgrades</h2>
@@ -43,11 +51,11 @@ const Menu = (props) => {
           onClick={props.handlePurchase}
           id="easy"
         >
-          <h4>Easy Questions</h4>
+          <h4 id="easy-h4">Easy Questions</h4>
           {easy ? (
             <div id="easy-owned">owned</div>
           ) : (
-            <div className="coin-cost-container">
+            <div className="coin-cost-container" id="coin-cost-easy">
               20
               <img src={coin} className="coin" alt="coin" />
             </div>
@@ -61,11 +69,11 @@ const Menu = (props) => {
           onClick={props.handlePurchase}
           id="medium"
         >
-          <h4>Medium Questions</h4>
+          <h4 id="medium-h4">Medium Questions</h4>
           {medium ? (
             <div id="medium-owned">owned </div>
           ) : (
-            <div className="coin-cost-container">
+            <div className="coin-cost-container" id="coin-cost-medium">
               30
               <img src={coin} className="coin" alt="coin" />
             </div>
@@ -79,11 +87,11 @@ const Menu = (props) => {
           onClick={props.handlePurchase}
           id="hard"
         >
-          <h4>Hard Questions</h4>
+          <h4 id="hard-h4">Hard Questions</h4>
           {hard ? (
             <div id="hard-owned">owned</div>
           ) : (
-            <div className="coin-cost-container">
+            <div className="coin-cost-container" id="coin-cost-hard">
               40
               <img src={coin} className="coin" alt="coin" />
             </div>
