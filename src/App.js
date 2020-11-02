@@ -103,6 +103,7 @@ function App() {
     }
     consoleLogger(setConsoled, consoled);
     setNewGame(false);
+    // eslint-disable-next-line
   }, [cookie, cookieNum, questionSet]);
 
   return (
