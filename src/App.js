@@ -29,7 +29,6 @@ function App() {
       medium: "false",
       hard: "false",
     })}`;
-    document.cookie += ";";
   };
 
   const handleCookieInfo = (type) => {
@@ -63,7 +62,7 @@ function App() {
       hard: `${hardScore}`,
     });
 
-    document.cookie = `cookie=${JSONdata};`;
+    document.cookie = `cookie=${JSONdata}`;
   };
 
   const handleScore = () => {
@@ -75,8 +74,7 @@ function App() {
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
     if (
-      JSON.parse(document.cookie.split(";")[1].split("=")[1])[type] ===
-        "true" ||
+      JSON.parse(document.cookie.split("=")[1])[type] === "true" ||
       type === "default"
     ) {
       handleQuestionSet(type);
@@ -99,7 +97,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(document.cookie);
     if (document.cookie.length > 0) {
       setCookie(true);
       setCookieNum(JSON.parse(document.cookie.split("=")[1]).score);
