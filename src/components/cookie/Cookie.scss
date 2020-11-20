@@ -40,6 +40,11 @@
 
 @media (max-width: 900px) {
   .cookie-container {
+    width: calc(100% - 80px) !important;
     left: 15vw;
+  }
+
+  .cookie-container > p {
+    margin: 10px !important;
   }
 }
