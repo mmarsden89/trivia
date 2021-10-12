@@ -3,33 +3,36 @@ import "./Menu.scss";
 import coin from "../../coin.png";
 
 const Menu = (props) => {
-  const [cookieNum, setCookieNum] = useState(0);
+  const { toggleMenu, handlePurchase, menu } = props;
+  const [points, setPoints] = useState(0);
   const [easy, setEasy] = useState(false);
   const [medium, setMedium] = useState(false);
   const [hard, setHard] = useState(false);
 
-  const cookies = JSON.parse(document.cookie.split("=")[1]);
+  const trividuh = JSON.parse(localStorage.getItem("trividuh"));
 
   const handleClick = (e) => {
     if (e.target.id) {
     } else {
-      props.toggleMenu();
+      toggleMenu();
     }
   };
 
   useEffect(() => {
-    setCookieNum(props.cookieNum);
-    setEasy(cookies.easy === "true");
-    setMedium(cookies.medium === "true");
-    setHard(cookies.hard === "true");
+    if (trividuh) {
+      setPoints(trividuh.points);
+      setEasy(trividuh.easy);
+      setMedium(trividuh.medium);
+      setHard(trividuh.hard);
+    }
     // eslint-disable-next-line
-  }, [cookieNum, easy, medium, hard, props.cookieNum, props.menuTog]);
+  }, [easy, medium, hard, points, toggleMenu, trividuh]);
 
   return (
     <div
-      className={props.menuTog ? "menu-container" : "menu-container-close"}
+      className={menu ? "menu-container" : "menu-container-close"}
       style={{
-        opacity: typeof props.menuTog === "string" ? "0" : "1",
+        opacity: typeof menu === "string" ? "0" : "1",
       }}
       onClick={handleClick}
     >
@@ -38,7 +41,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{ cursor: "pointer" }}
-          onClick={props.handlePurchase}
+          onClick={handlePurchase}
           id="default"
         >
           Default Questions
@@ -46,7 +49,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 10 || easy ? "pointer" : "not-allowed",
+            cursor: points >= 10 || easy ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="easy"
@@ -64,7 +67,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 30 || medium ? "pointer" : "not-allowed",
+            cursor: points >= 30 || medium ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="medium"
@@ -82,7 +85,7 @@ const Menu = (props) => {
         <div
           className="upgrade-coin-container button"
           style={{
-            cursor: cookieNum >= 40 || hard ? "pointer" : "not-allowed",
+            cursor: points >= 40 || hard ? "pointer" : "not-allowed",
           }}
           onClick={props.handlePurchase}
           id="hard"

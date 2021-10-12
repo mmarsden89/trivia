@@ -1,7 +1,7 @@
 import "./App.scss";
 import "./media-queries.scss";
 import React, { useState, useEffect } from "react";
-import { Footer, Cookie, Header, Menu, PlayArea } from "./components/index.js";
+import { Footer, Header, Menu, PlayArea } from "./components/index.js";
 import questions from "./questions.json";
 import questionseasy from "./questionseasy.json";
 import questionsmedium from "./questionsmedium.json";
@@ -9,13 +9,15 @@ import questionshard from "./questionshard.json";
 import consoleLogger from "./helpers/consolelogger";
 
 function App() {
+  const trividuh = JSON.parse(localStorage.getItem("trividuh"));
+
   const [menu, setMenu] = useState("");
-  const [cookie, setCookie] = useState(false);
-  const [cookieNum, setCookieNum] = useState(0);
   const [score, setScore] = useState(0);
+  const [cookie, setCookie] = useState(false);
   const [questionSet, setQuestionSet] = useState(questions);
   const [newGame, setNewGame] = useState(false);
   const [consoled, setConsoled] = useState(false);
+  const [updated, setUpdated] = useState(false);
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -23,60 +25,55 @@ function App() {
 
   const handleCookie = () => {
     setCookie(true);
-    document.cookie = `cookie=${JSON.stringify({
-      score: "0",
-      easy: "false",
-      medium: "false",
-      hard: "false",
-    })}`;
+
+    const data = JSON.stringify({
+      points: 10,
+      easy: false,
+      medium: false,
+      hard: false,
+    });
+    localStorage.setItem("trividuh", data);
+
+    setUpdated(true);
   };
 
   const handleCookieInfo = (type) => {
-    let cookieJSON = JSON.parse(document.cookie.split("=")[1]);
-    let cookieScore = parseFloat(cookieJSON.score);
-    let easyScore = cookieJSON.easy === "true";
-    let mediumScore = cookieJSON.medium === "true";
-    let hardScore = cookieJSON.hard === "true";
+    let { points, easy, medium, hard } = trividuh;
     if (type === "score") {
-      cookieScore = cookieScore + 1;
-      setCookieNum(cookieScore);
-    } else if (cookieScore >= 10) {
-      if (type === "easy" && !easyScore) {
-        easyScore = true;
-        cookieScore = cookieScore - 10;
-        setCookieNum(cookieScore);
-      } else if (type === "medium" && !mediumScore && cookieScore >= 30) {
-        mediumScore = true;
-        cookieScore = cookieScore - 30;
-        setCookieNum(cookieScore);
-      } else if (type === "hard" && !hardScore && cookieScore >= 40) {
-        hardScore = true;
-        cookieScore = cookieScore - 40;
-        setCookieNum(cookieScore);
+      setScore(score + 1);
+      points++;
+    } else if (points >= 10) {
+      if (type === "easy" && !easy) {
+        easy = true;
+        points = points - 10;
+      } else if (type === "medium" && !medium && points >= 30) {
+        medium = true;
+        points = points - 30;
+      } else if (type === "hard" && !hard && points >= 40) {
+        hard = true;
+        points = points - 40;
       }
     }
-    let JSONdata = JSON.stringify({
-      score: `${cookieScore}`,
-      easy: `${easyScore}`,
-      medium: `${mediumScore}`,
-      hard: `${hardScore}`,
+    let updatedData = JSON.stringify({
+      points: points,
+      easy: easy,
+      medium: medium,
+      hard: hard,
     });
 
-    document.cookie = `cookie=${JSONdata}`;
+    localStorage.setItem("trividuh", updatedData);
+    setUpdated(true);
   };
 
   const handleScore = () => {
     handleCookieInfo("score");
-    let newScore = score + 1;
-    setScore(newScore);
+    setScore(score + 1);
+    setUpdated(true);
   };
 
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
-    if (
-      JSON.parse(document.cookie.split("=")[1])[type] === "true" ||
-      type === "default"
-    ) {
+    if (localStorage.getItem(type)) {
       handleQuestionSet(type);
     } else {
       handleCookieInfo(type);
@@ -97,30 +94,29 @@ function App() {
   };
 
   useEffect(() => {
-    if (document.cookie.length > 0) {
+    if (trividuh) {
       setCookie(true);
-      setCookieNum(JSON.parse(document.cookie.split("=")[1]).score);
+    } else {
+      handleCookie();
     }
     consoleLogger(setConsoled, consoled);
     setNewGame(false);
+    setUpdated(false);
     // eslint-disable-next-line
-  }, [cookie, cookieNum, questionSet]);
+  }, [cookie, questionSet, trividuh, updated]);
 
   return (
     <div className="App">
-      {!cookie && <Cookie handleCookie={handleCookie} cookie={cookie} />}
       {cookie && (
         <>
-          {" "}
           <header className="App-header">
-            <Header toggleMenu={toggleMenu} cookieNum={cookieNum} />
+            <Header toggleMenu={toggleMenu} />
           </header>
           <div className="body-container">
             {
               <Menu
-                cookieNum={cookieNum}
                 handlePurchase={handlePurchase}
-                menuTog={menu}
+                menu={menu}
                 toggleMenu={toggleMenu}
               />
             }
