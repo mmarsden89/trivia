@@ -27,7 +27,7 @@ function App() {
     setCookie(true);
 
     const data = JSON.stringify({
-      points: 10,
+      points: 0,
       easy: false,
       medium: false,
       hard: false,
