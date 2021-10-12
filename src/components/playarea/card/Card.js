@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "./node_modules/react";
+import React, { useState, useEffect } from "react";
 import "./Card.scss";
 
 const Card = (props) => {
