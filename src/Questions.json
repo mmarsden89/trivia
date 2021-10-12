@@ -1,9 +1,9 @@
 [
   {
     "level": "default",
-    "question": "What was Tandem previous name?",
-    "incorrect": ["Tandem", "Burger Shack", "Extraordinary Humans"],
-    "correct": "Devmynd"
+    "question": "What is the capital of Brazil",
+    "incorrect": ["Brasília", "Rio de Janeiro", "São Sebastião"],
+    "correct": "Brasília"
   },
   {
     "level": "default",
