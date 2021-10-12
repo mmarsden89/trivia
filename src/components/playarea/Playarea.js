@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "./node_modules/react";
 import "./PlayArea.scss";
 import scoreRange from "../../scoreRange.json";
 
-import Card from "./card/Card.js";
+import Card from "./Card/Card.js";
 
 const PlayArea = (props) => {
   const [cardQuestion, setCardQuestion] = useState({});

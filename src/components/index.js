@@ -1,6 +1,6 @@
-import Footer from "./footer/Footer.js";
-import Header from "./header/Header.js";
-import Menu from "./menu/Menu.js";
-import PlayArea from "./playarea/PlayArea.js";
+import Footer from "./Footer/Footer.js";
+import Header from "./Header/Header.js";
+import Menu from "./Menu/Menu.js";
+import PlayArea from "./Playarea/PlayArea.js";
 
 export { Footer, Header, Menu, PlayArea };
