@@ -51,7 +51,7 @@ const Menu = (props) => {
           style={{
             cursor: points >= 10 || easy ? "pointer" : "not-allowed",
           }}
-          onClick={props.handlePurchase}
+          onClick={handlePurchase}
           id="easy"
         >
           <h4 id="easy-h4">Easy Questions</h4>
@@ -69,7 +69,7 @@ const Menu = (props) => {
           style={{
             cursor: points >= 30 || medium ? "pointer" : "not-allowed",
           }}
-          onClick={props.handlePurchase}
+          onClick={handlePurchase}
           id="medium"
         >
           <h4 id="medium-h4">Medium Questions</h4>

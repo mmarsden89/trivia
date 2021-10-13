@@ -56,6 +56,7 @@ function App() {
     }
     let updatedData = JSON.stringify({
       points: points,
+      default: true,
       easy: easy,
       medium: medium,
       hard: hard,
@@ -73,7 +74,8 @@ function App() {
 
   const handlePurchase = (event) => {
     const type = event.currentTarget.id;
-    if (localStorage.getItem(type)) {
+    if (trividuh[type]) {
+      console.log(type);
       handleQuestionSet(type);
     } else {
       handleCookieInfo(type);
@@ -94,6 +96,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log(trividuh);
     if (trividuh) {
       setCookie(true);
     } else {

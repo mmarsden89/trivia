@@ -2,7 +2,7 @@
   {
     "level": "default",
     "question": "What is the capital of Brazil",
-    "incorrect": ["Brasília", "Rio de Janeiro", "São Sebastião"],
+    "incorrect": ["São Paulo", "Rio de Janeiro", "São Sebastião"],
     "correct": "Brasília"
   },
   {
