@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trividuh/static/css/main.1a642c61.chunk.css",
-    "main.js": "/trividuh/static/js/main.19629571.chunk.js",
-    "main.js.map": "/trividuh/static/js/main.19629571.chunk.js.map",
+    "main.js": "/trividuh/static/js/main.d018594d.chunk.js",
+    "main.js.map": "/trividuh/static/js/main.d018594d.chunk.js.map",
     "runtime-main.js": "/trividuh/static/js/runtime-main.c7bc5cbc.js",
     "runtime-main.js.map": "/trividuh/static/js/runtime-main.c7bc5cbc.js.map",
     "static/js/2.0acb255c.chunk.js": "/trividuh/static/js/2.0acb255c.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c7bc5cbc.js",
     "static/js/2.0acb255c.chunk.js",
     "static/css/main.1a642c61.chunk.css",
-    "static/js/main.19629571.chunk.js"
+    "static/js/main.d018594d.chunk.js"
   ]
 }
